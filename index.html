@@ -1,27 +1,28 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio 🌸</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academic portfolio of Pierina Flores, physics student and aspiring researcher.">
+  <title>Pierina Flores | Academic Portfolio</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
   <style>
     :root {
-      --bg-primary: #fbf7f5;
-      --bg-surface: #ffffff;
-      --text-main: #4a4453;
-      --text-muted: #8c8297;
-      --accent-pink: #ffb7c5;
-      --accent-lavender: #e2d4f9;
-      --accent-sage: #d4ebd4;
-      --accent-peach: #ffd8be;
-      --card-border: #f0e6e4;
-      --shadow: 0 8px 24px rgba(140, 130, 151, 0.08);
-      --font-heading: 'Fredoka', cursive, sans-serif;
-      --font-body: 'Quicksand', sans-serif;
+      --cream: #f6f5ef;
+      --paper: #fffefa;
+      --green: #193b30;
+      --green2: #315b49;
+      --sage: #dce6dc;
+      --gold: #b69a61;
+      --ink: #26332d;
+      --muted: #68766e;
+      --line: #e2e5dc;
+      --shadow: 0 16px 45px rgba(25,59,48,.08);
     }
 
     * {
@@ -30,287 +31,654 @@
       padding: 0;
     }
 
-    body {
-      background-color: var(--bg-primary);
-      color: var(--text-main);
-      font-family: var(--font-body);
-      line-height: 1.7;
-      padding-bottom: 60px;
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
     }
 
-    /* Header & Navigation */
-    header {
-      background-color: var(--bg-surface);
-      padding: 1.5rem 2rem;
+    body {
+      background: var(--cream);
+      color: var(--ink);
+      font-family: 'DM Sans', sans-serif;
+      line-height: 1.7;
+    }
+
+    a { color: inherit; }
+
+    .site-header {
       position: sticky;
       top: 0;
-      z-index: 100;
-      border-bottom: 2px dashed var(--accent-pink);
+      z-index: 10;
+      background: rgba(255,254,250,.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
     }
 
-    .nav-container {
-      max-width: 900px;
-      margin: 0 auto;
+    .nav-wrap {
+      max-width: 1120px;
+      margin: auto;
+      padding: 16px 28px;
       display: flex;
+      align-items: center;
       justify-content: space-between;
-      align-items: center;
+      gap: 24px;
     }
 
-    .logo {
-      font-family: var(--font-heading);
-      font-size: 1.6rem;
-      color: var(--text-main);
+    .brand {
+      color: var(--green);
+      font-family: 'Playfair Display', serif;
+      font-size: 1.25rem;
+      font-weight: 700;
       text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .logo span {
-      background: var(--accent-pink);
-      color: white;
-      padding: 2px 10px;
-      border-radius: 20px;
-      font-size: 0.9rem;
     }
 
     nav {
       display: flex;
-      gap: 1.2rem;
-    }
-
-    .nav-link {
-      color: var(--text-muted);
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 0.95rem;
-      padding: 6px 14px;
-      border-radius: 15px;
-      transition: all 0.2s ease;
-    }
-
-    .nav-link:hover, .nav-link.active {
-      color: var(--text-main);
-      background-color: var(--accent-lavender);
-    }
-
-    main {
-      max-width: 900px;
-      margin: 3rem auto;
-      padding: 0 1.5rem;
-    }
-
-    /* Hero Section */
-    .hero {
-      background: var(--bg-surface);
-      padding: 2.5rem;
-      border-radius: 24px;
-      box-shadow: var(--shadow);
-      border: 1px solid var(--card-border);
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-      margin-bottom: 3rem;
-    }
-
-    .avatar {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      background: var(--accent-peach);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 3rem;
-      border: 4px solid var(--bg-surface);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      flex-shrink: 0;
-    }
-
-    .hero-text h1 {
-      font-family: var(--font-heading);
-      font-size: 2.2rem;
-      margin-bottom: 0.5rem;
-      color: var(--text-main);
-    }
-
-    .hero-text p {
-      color: var(--text-muted);
-      font-size: 1.05rem;
-      margin-bottom: 1.2rem;
-    }
-
-    .tags {
-      display: flex;
-      gap: 8px;
       flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 7px 19px;
     }
 
-    .tag {
-      background: var(--accent-sage);
-      color: #3b5c3b;
-      padding: 4px 12px;
-      border-radius: 12px;
-      font-size: 0.85rem;
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: .88rem;
       font-weight: 600;
     }
 
-    /* Section Headings */
-    .section-title {
-      font-family: var(--font-heading);
-      font-size: 1.6rem;
-      margin-bottom: 1.5rem;
-      display: flex;
-      align-items: center;
-      gap: 10px;
+    nav a:hover { color: var(--green2); }
+
+    .container {
+      width: min(100% - 48px, 1000px);
+      margin: auto;
     }
 
-    /* Projects Grid */
-    .grid {
+    .hero {
+      padding: 88px 0 76px;
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 1.5rem;
-      margin-bottom: 3rem;
+      grid-template-columns: 1.35fr .65fr;
+      align-items: center;
+      gap: 52px;
+    }
+
+    .eyebrow {
+      color: var(--green2);
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+      color: var(--green);
+      line-height: 1.2;
+    }
+
+    h1 {
+      font-size: clamp(2.8rem, 6vw, 5rem);
+      margin: 14px 0 18px;
+      letter-spacing: -.035em;
+    }
+
+    .hero-lead {
+      max-width: 650px;
+      color: var(--muted);
+      font-size: 1.12rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 11px 19px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: .9rem;
+      transition: transform .2s;
+    }
+
+    .button:hover { transform: translateY(-2px); }
+
+    .button-primary {
+      background: var(--green);
+      color: white;
+    }
+
+    .button-outline {
+      border: 1px solid var(--green);
+      color: var(--green);
+    }
+
+    .hero-art {
+      min-height: 310px;
+      background: var(--green);
+      color: #f8f6ed;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .hero-art:before, .hero-art:after {
+      content: "";
+      position: absolute;
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: 50%;
+      width: 260px;
+      height: 260px;
+      right: -75px;
+      top: -75px;
+    }
+
+    .hero-art:after {
+      width: 190px;
+      height: 190px;
+      right: -40px;
+      top: -40px;
+    }
+
+    .monogram {
+      font-family: 'Playfair Display', serif;
+      font-size: 5.5rem;
+      line-height: 1;
+      color: #e5d8b8;
+      position: relative;
+      z-index: 1;
+    }
+
+    .art-caption {
+      max-width: 220px;
+      color: #d7e1d7;
+      font-size: .9rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    section.content-section {
+      padding: 66px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .section-heading { margin-bottom: 28px; }
+
+    .section-heading h2 {
+      font-size: clamp(2rem, 4vw, 2.7rem);
+      margin-top: 8px;
+    }
+
+    .section-intro {
+      color: var(--muted);
+      max-width: 720px;
+      margin-top: 12px;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 36px;
+    }
+
+    .about-copy p + p { margin-top: 14px; }
+
+    .info-panel {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      padding: 25px;
+      box-shadow: var(--shadow);
+    }
+
+    .info-panel h3 {
+      font-size: 1.25rem;
+      margin-bottom: 12px;
+    }
+
+    .interest-list, .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .pill {
+      display: inline-block;
+      background: var(--sage);
+      color: var(--green);
+      border-radius: 3px;
+      padding: 6px 10px;
+      font-size: .82rem;
+      font-weight: 600;
+    }
+
+    .feature-card {
+      display: grid;
+      grid-template-columns: 190px 1fr;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      margin-top: 18px;
+    }
+
+    .feature-visual {
+      background: #e3e9df;
+      min-height: 190px;
+      display: grid;
+      place-items: center;
+      color: var(--green);
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+    }
+
+    .feature-body { padding: 25px 28px; }
+
+    .feature-body h3 {
+      font-size: 1.45rem;
+      margin: 6px 0 10px;
+    }
+
+    .meta {
+      color: var(--green2);
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .feature-body p, .card p { color: var(--muted); }
+
+    .tag-row { margin-top: 15px; gap: 7px; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
     }
 
     .card {
-      background: var(--bg-surface);
-      border-radius: 20px;
-      padding: 1.5rem;
-      border: 1px solid var(--card-border);
+      background: var(--paper);
+      border: 1px solid var(--line);
+      padding: 24px;
       box-shadow: var(--shadow);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .number {
+      color: var(--gold);
+      font-family: 'Playfair Display', serif;
+      font-size: 1.7rem;
+    }
+
+    .card h3 {
+      font-size: 1.3rem;
+      margin: 8px 0;
+    }
+
+    .timeline {
+      border-left: 1px solid #b7c6b8;
+      margin-left: 8px;
+      padding-left: 25px;
+    }
+
+    .timeline-item {
+      position: relative;
+      padding: 0 0 28px;
+    }
+
+    .timeline-item:before {
+      content: "";
+      position: absolute;
+      left: -31px;
+      top: 7px;
+      width: 11px;
+      height: 11px;
+      background: var(--gold);
+      border: 3px solid var(--cream);
+      border-radius: 50%;
+    }
+
+    .timeline-item h3 { font-size: 1.2rem; }
+
+    .timeline-item .meta { margin: 4px 0 7px; }
+
+    .timeline-item p { color: var(--muted); }
+
+    .contact-panel {
+      background: var(--green);
+      color: #f8f6ed;
+      padding: 38px;
       display: flex;
-      flex-direction: column;
-    }
-
-    .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 28px rgba(140, 130, 151, 0.12);
-    }
-
-    .card-icon {
-      font-size: 2rem;
-      margin-bottom: 0.8rem;
-    }
-
-    .card-title {
-      font-family: var(--font-heading);
-      font-size: 1.25rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .card-desc {
-      color: var(--text-muted);
-      font-size: 0.95rem;
-      flex-grow: 1;
-      margin-bottom: 1rem;
-    }
-
-    .card-link {
-      color: var(--text-main);
-      font-weight: 700;
-      font-size: 0.9rem;
-      text-decoration: none;
-      display: inline-flex;
       align-items: center;
-      gap: 4px;
+      justify-content: space-between;
+      gap: 28px;
     }
 
-    .card-link:hover {
-      text-decoration: underline;
+    .contact-panel h2 {
+      color: white;
+      font-size: 2rem;
+      margin-bottom: 8px;
     }
 
-    /* Footer */
+    .contact-panel p {
+      color: #d7e1d7;
+      max-width: 560px;
+    }
+
+    .contact-panel .button {
+      background: #e5d8b8;
+      color: var(--green);
+      white-space: nowrap;
+    }
+
     footer {
+      padding: 28px 0 38px;
       text-align: center;
-      color: var(--text-muted);
-      font-size: 0.9rem;
-      margin-top: 4rem;
+      color: var(--muted);
+      font-size: .82rem;
     }
 
-    @media (max-width: 600px) {
-      .hero {
+    @media(max-width:760px) {
+      .nav-wrap {
+        align-items: flex-start;
         flex-direction: column;
-        text-align: center;
+        padding: 14px 22px;
       }
-      .tags {
-        justify-content: center;
+
+      nav {
+        justify-content: flex-start;
+        gap: 8px 15px;
+      }
+
+      .container { width: min(100% - 36px, 1000px); }
+
+      .hero {
+        grid-template-columns: 1fr;
+        padding: 62px 0 54px;
+        gap: 30px;
+      }
+
+      .hero-art { min-height: 220px; }
+
+      .about-grid, .cards { grid-template-columns: 1fr; }
+
+      .feature-card { grid-template-columns: 1fr; }
+
+      .feature-visual { min-height: 130px; }
+
+      .contact-panel {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 28px;
       }
     }
   </style>
 </head>
+
 <body>
 
-  <header>
-    <div class="nav-container">
-      <a href="#" class="logo">✦ Portfolio <span>v1.0</span></a>
-      <nav>
-        <a href="#projects" class="nav-link active">Projects</a>
-        <a href="#about" class="nav-link">About</a>
-        <a href="#contact" class="nav-link">Contact</a>
-      </nav>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="#home">Pierina Flores</a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#leadership">Leadership</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="hero" id="home">
+    <div>
+      <p class="eyebrow">Physics · Research · Student Leadership</p>
+      <h1>Curious about the science behind our world.</h1>
+      <p class="hero-lead">
+        I'm Pierina Flores, a physics student at Miami Dade College
+        and a member of the Honors College. I'm interested in exploring
+        how scientific ideas connect across disciplines, from the
+        microscopic world to larger systems.
+      </p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#research">Explore my work</a>
+        <a class="button button-outline" href="#contact">Get in touch</a>
+      </div>
     </div>
-  </header>
 
-  <main>
-    <!-- Hero Section -->
-    <section class="hero" id="about">
-      <div class="avatar">✨</div>
-      <div class="hero-text">
-        <h1>Hi there, I'm [Your Name]!</h1>
-        <p>A student creator building cool projects, writing, and exploring technology.</p>
-        <div class="tags">
-          <span class="tag">🌱 Learning</span>
-          <span class="tag">🎨 Design</span>
-          <span class="tag">💻 Web Dev</span>
+    <div class="hero-art">
+      <div class="monogram">PF</div>
+      <p class="art-caption">
+        Learning through research, asking questions, and building ideas.
+      </p>
+    </div>
+  </section>
+
+  <section class="content-section" id="about">
+    <div class="section-heading">
+      <p class="eyebrow">A little about me</p>
+      <h2>About</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-copy">
+        <p>
+          My academic interests include biophysics, quantum physics,
+          and nuclear physics. I am especially drawn to interdisciplinary
+          questions that bring together fundamental scientific principles,
+          experimentation, and real-world applications.
+        </p>
+
+        <p>
+          My first research experience at the University of Miami helped
+          me develop an appreciation for experimental design, data analysis,
+          collaboration, and the persistence required to troubleshoot
+          scientific problems. Outside the lab, I enjoy using communication
+          and technology to create opportunities for students to share their ideas.
+        </p>
+
+        <p>
+          I hope to continue my studies in physics, contribute to meaningful
+          research, and eventually pursue a career that combines scientific
+          research with university teaching.
+        </p>
+      </div>
+
+      <aside class="info-panel">
+        <h3>Areas of interest</h3>
+        <div class="interest-list">
+          <span class="pill">Biophysics</span>
+          <span class="pill">Quantum physics</span>
+          <span class="pill">Nuclear physics</span>
+          <span class="pill">Scientific computing</span>
+          <span class="pill">Interdisciplinary research</span>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="content-section" id="research">
+    <div class="section-heading">
+      <p class="eyebrow">Learning in the laboratory</p>
+      <h2>Research experience</h2>
+      <p class="section-intro">
+        My first research traineeship introduced me to the process of
+        developing an experiment, working with data, and adapting when
+        an approach did not work as expected.
+      </p>
+    </div>
+
+    <article class="feature-card">
+      <div class="feature-visual">01</div>
+      <div class="feature-body">
+        <p class="meta">University of Miami · Summer 2026</p>
+        <h3>Investigating color preferences in <i>Drosophila</i></h3>
+        <p>
+          As a summer research trainee, I contributed to a project
+          investigating fruit flies' responses to different colors.
+          My work included helping develop a 24-well experimental arena,
+          assisting with the lighting and imaging setup, and working with
+          image-analysis methods. The experience exposed me to experimental
+          design, data collection, troubleshooting, and the importance of
+          controlling variables in a research environment.
+        </p>
+        <div class="tag-row">
+          <span class="pill">Drosophila</span>
+          <span class="pill">Experimental design</span>
+          <span class="pill">Image analysis</span>
+          <span class="pill">MATLAB</span>
         </div>
       </div>
-    </section>
+    </article>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-      <h2 class="section-title">🎀 Featured Works</h2>
-      <div class="grid">
-        
-        <div class="card">
-          <div class="card-icon">🍃</div>
-          <h3 class="card-title">Verdant Magazine</h3>
-          <p class="card-desc">A student publication featuring engineering, sustainability, and creative ideas.</p>
-          <a href="#" class="card-link">View Project ➔</a>
-        </div>
+  <section class="content-section" id="projects">
+    <div class="section-heading">
+      <p class="eyebrow">Selected work</p>
+      <h2>Projects &amp; interests</h2>
+      <p class="section-intro">
+        A growing collection of academic, technical, and communication
+        projects. More work will be added as projects develop.
+      </p>
+    </div>
 
-        <div class="card">
-          <div class="card-icon">⚡</div>
-          <h3 class="card-title">STEM Projects</h3>
-          <p class="card-desc">A collection of lab work, prototypes, and hardware experiments.</p>
-          <a href="#" class="card-link">View Project ➔</a>
-        </div>
+    <div class="cards">
+      <article class="card">
+        <span class="number">01</span>
+        <h3>Verdant — Student Magazine</h3>
+        <p>
+          Website lead for a student publication highlighting research,
+          engineering, sustainability, student perspectives, and creative
+          thought. The project combines digital design, communication,
+          and student collaboration.
+        </p>
+      </article>
 
-        <div class="card">
-          <div class="card-icon">📝</div>
-          <h3 class="card-title">Creative Notes</h3>
-          <p class="card-desc">Personal thoughts, articles, and interactive student ideas.</p>
-          <a href="#" class="card-link">Read Notes ➔</a>
-        </div>
+      <article class="card">
+        <span class="number">02</span>
+        <h3>Scientific research &amp; analysis</h3>
+        <p>
+          Hands-on experience with experimental setups, image-based
+          observations, and MATLAB-related analysis during a summer
+          research traineeship.
+        </p>
+      </article>
 
+      <article class="card">
+        <span class="number">03</span>
+        <h3>Physics reading &amp; exploration</h3>
+        <p>
+          Independent exploration of topics in quantum physics, nuclear
+          physics, and biophysics, with an interest in how theoretical
+          concepts connect to experimental questions.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="number">04</span>
+        <h3>Academic development</h3>
+        <p>
+          Coursework and Honors College experiences that strengthen
+          my foundation in mathematics, physics, scientific reasoning,
+          and research communication.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="content-section" id="leadership">
+    <div class="section-heading">
+      <p class="eyebrow">Beyond the classroom</p>
+      <h2>Leadership &amp; involvement</h2>
+    </div>
+
+    <div class="cards">
+      <article class="card">
+        <span class="number">01</span>
+        <h3>Verdant Student Magazine</h3>
+        <p>
+          Website lead, helping shape the publication's digital presence
+          and support a platform for student journalism, research,
+          and creative ideas.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="number">02</span>
+        <h3>Society of Environmental Engineers</h3>
+        <p>
+          Involved in student engagement and initiatives that connect
+          students with environmental topics, volunteering, and
+          academic opportunities.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="number">03</span>
+        <h3>Honors College</h3>
+        <p>
+          Member of the Miami Dade College Honors College, participating
+          in an academic community focused on intellectual growth
+          and continued educational development.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="content-section" id="education">
+    <div class="section-heading">
+      <p class="eyebrow">Academic background</p>
+      <h2>Education</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Miami Dade College</h3>
+        <p class="meta">Physics · Honors College · Present</p>
+        <p>
+          Undergraduate studies focused on building a strong foundation
+          in physics and mathematics while exploring research and
+          interdisciplinary scientific fields.
+        </p>
       </div>
-    </section>
+    </div>
 
-    <!-- Contact Section -->
-    <section id="contact" style="background: var(--bg-surface); padding: 2rem; border-radius: 20px; border: 1px solid var(--card-border); text-align: center;">
-      <h2 class="section-title" style="justify-content: center;">💌 Let's Connect</h2>
-      <p style="color: var(--text-muted); margin-bottom: 1.2rem;">Feel free to reach out for collaborations or just to say hi!</p>
-      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-        <a href="https://github.com" target="_blank" class="nav-link" style="background: var(--accent-pink); color: white;">GitHub Profile</a>
-        <a href="mailto:your-email@example.com" class="nav-link" style="background: var(--accent-sage); color: #3b5c3b;">Send Email</a>
+    <p class="section-intro">
+      Additional coursework, awards, presentations, certifications,
+      and academic milestones will be added as they are confirmed.
+    </p>
+  </section>
+
+  <section class="content-section" id="contact">
+    <div class="contact-panel">
+      <div>
+        <p class="eyebrow" style="color:#d9c99f">Connect</p>
+        <h2>Let's start a conversation.</h2>
+        <p>
+          I'm always interested in connecting with students, educators,
+          and researchers who are passionate about science, learning,
+          and collaboration.
+        </p>
       </div>
-    </section>
-  </main>
 
-  <footer>
-    <p>Made with 🌸 for GitHub Pages</p>
-  </footer>
+      <!-- Replace this placeholder with your professional email -->
+      <a class="button" href="mailto:YOUR-EMAIL@example.com">Email me</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="container">
+  <p>© 2026 Pierina Flores · Academic Portfolio</p>
+</footer>
 
 </body>
 </html>
