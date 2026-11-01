@@ -2,901 +2,1126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Academic portfolio of Pierina Flores.">
-<title>Pierina Flores | Academic Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academic portfolio of a physics student, researcher, and student leader.">
+  <title>Academic Portfolio | Pierina Flores</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<style>
-:root {
-  --bg: #fbf8f6;
-  --surface: #fff;
-  --text: #393440;
-  --muted: #79717d;
-  --pink: #d9a7b5;
-  --pink-light: #f3e5e9;
-  --lavender: #c9bddf;
-  --lavender-light: #eeeaf5;
-  --sage: #b9cdbd;
-  --sage-light: #eaf0eb;
-  --border: #e9e2e4;
-  --shadow: 0 8px 28px rgba(57,52,64,.05);
-}
+  <style>
+    :root {
+      --background: #f7f5f2;
+      --surface: #ffffff;
+      --text: #302d32;
+      --muted: #77717b;
+      --pink: #d9aebc;
+      --pink-light: #f3e6eb;
+      --lavender: #dcd5e8;
+      --sage: #dce5dc;
+      --border: #e9e4e2;
+      --shadow: 0 8px 28px rgba(50, 40, 50, 0.06);
+      --serif: "DM Serif Display", Georgia, serif;
+      --sans: "Inter", Arial, sans-serif;
+    }
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-html { scroll-behavior: smooth; scroll-padding-top: 85px; }
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
 
-body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: "Inter", sans-serif;
-  line-height: 1.7;
-}
+    body {
+      background: var(--background);
+      color: var(--text);
+      font-family: var(--sans);
+      line-height: 1.7;
+    }
 
-a { color: inherit; text-decoration: none; }
-button { font: inherit; }
-.container { width: min(1080px, 88%); margin: auto; }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-header {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background: rgba(251,248,246,.95);
-  backdrop-filter: blur(14px);
-  border-bottom: 1px solid var(--border);
-}
+    button {
+      font: inherit;
+    }
 
-nav {
-  min-height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-}
+    .container {
+      width: min(1100px, 90%);
+      margin: auto;
+    }
 
-.brand {
-  font: 1.35rem "DM Serif Display", serif;
-}
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(247, 245, 242, 0.94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
 
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 22px;
-  list-style: none;
-}
+    .navbar {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
 
-.nav-links a {
-  color: var(--muted);
-  font-size: .8rem;
-  white-space: nowrap;
-}
+    .logo {
+      font-family: var(--serif);
+      font-size: 1.35rem;
+      color: #594653;
+    }
 
-.nav-links a:hover { color: #a97888; }
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      list-style: none;
+      font-size: 0.83rem;
+      color: var(--muted);
+    }
 
-h1, h2, h3 {
-  font-family: "DM Serif Display", serif;
-  font-weight: 400;
-  line-height: 1.2;
-}
+    .nav-links a:hover {
+      color: #a66e86;
+    }
 
-.hero {
-  padding: 100px 0 85px;
-  display: grid;
-  grid-template-columns: 1.5fr .7fr;
-  gap: 60px;
-  align-items: center;
-}
+    .hero {
+      padding: 100px 0 90px;
+      display: grid;
+      grid-template-columns: 1.5fr 0.8fr;
+      align-items: center;
+      gap: 60px;
+    }
 
-.eyebrow, .section-label, .card-meta {
-  color: #a97888;
-  font-size: .73rem;
-  font-weight: 700;
-  letter-spacing: 1.8px;
-  text-transform: uppercase;
-}
+    .eyebrow {
+      color: #a66e86;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
 
-.eyebrow { margin-bottom: 18px; }
+    h1, h2, h3 {
+      font-family: var(--serif);
+      font-weight: 400;
+      line-height: 1.2;
+    }
 
-h1 {
-  font-size: clamp(3.2rem, 7vw, 5.2rem);
-  letter-spacing: -2px;
-  margin-bottom: 15px;
-}
+    h1 {
+      font-size: clamp(3rem, 7vw, 5.2rem);
+      margin-bottom: 20px;
+    }
 
-.hero-subtitle { color: var(--muted); margin-bottom: 20px; }
-.hero-description { max-width: 610px; color: #655e69; margin-bottom: 28px; }
+    .hero p {
+      max-width: 620px;
+      color: var(--muted);
+      font-size: 1.02rem;
+    }
 
-.hero-mark {
-  width: 225px;
-  height: 265px;
-  margin: auto;
-  background: linear-gradient(145deg,var(--pink-light),var(--lavender-light));
-  border: 1px solid #e8dce6;
-  display: grid;
-  place-items: center;
-  position: relative;
-}
+    .hero-note {
+      margin-top: 25px;
+      display: inline-block;
+      padding: 10px 16px;
+      background: var(--pink-light);
+      border-radius: 5px;
+      color: #785768;
+      font-size: 0.83rem;
+    }
 
-.hero-mark:before {
-  content: "";
-  position: absolute;
-  inset: 13px;
-  border: 1px solid rgba(169,120,136,.3);
-}
+    .hero-visual {
+      min-height: 340px;
+      border-radius: 180px 180px 12px 12px;
+      background: linear-gradient(145deg, var(--pink-light), var(--lavender), var(--sage));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 30px;
+      color: #665765;
+    }
 
-.initials { font: 5rem "DM Serif Display",serif; color: #88758d; }
+    .hero-visual span {
+      font-family: var(--serif);
+      font-size: 2rem;
+      line-height: 1.35;
+    }
 
-.button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 19px;
-  border: 1px solid var(--pink);
-  border-radius: 7px;
-  font-size: .84rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: .2s;
-}
+    section {
+      padding: 78px 0;
+    }
 
-.button.primary { background: var(--pink); color: white; }
-.button.primary:hover { background: #c991a1; }
-.button.secondary:hover { background: var(--pink-light); }
+    .section-heading {
+      margin-bottom: 32px;
+    }
 
-.hero-actions, .contact-links { display: flex; flex-wrap: wrap; gap: 12px; }
+    .section-heading h2 {
+      font-size: clamp(2.2rem, 5vw, 3rem);
+      margin-bottom: 10px;
+    }
 
-section { padding: 72px 0; }
+    .section-heading p {
+      color: var(--muted);
+      max-width: 650px;
+      font-size: 0.93rem;
+    }
 
-.section-heading { margin-bottom: 32px; }
-.section-label { margin-bottom: 10px; }
-.section-heading h2 { font-size: clamp(2rem,4vw,2.7rem); margin-bottom: 9px; }
-.section-heading p { max-width: 660px; color: var(--muted); font-size: .92rem; }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 0.7fr;
+      gap: 25px;
+    }
 
-.about-grid {
-  display: grid;
-  grid-template-columns: 1.3fr .7fr;
-  gap: 50px;
-}
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: var(--shadow);
+    }
 
-.about-copy p { color: #655e69; margin-bottom: 15px; }
+    .card p {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
 
-.interest-panel {
-  background: white;
-  border: 1px solid var(--border);
-  border-top: 3px solid var(--lavender);
-  border-radius: 12px;
-  padding: 25px;
-}
+    .interests {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: 20px;
+    }
 
-.interest-panel h3 { font-size: 1.3rem; margin-bottom: 12px; }
-.interest-list { list-style: none; }
-.interest-list li { padding: 9px 0; border-bottom: 1px solid var(--border); color: var(--muted); font-size: .88rem; }
+    .interest {
+      background: var(--pink-light);
+      color: #76566a;
+      padding: 7px 12px;
+      border-radius: 4px;
+      font-size: 0.76rem;
+    }
 
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: 20px;
-}
+    .quick-facts {
+      display: grid;
+      gap: 18px;
+    }
 
-.project-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: var(--shadow);
-  text-align: left;
-  cursor: pointer;
-  color: var(--text);
-  transition: transform .2s,border-color .2s;
-  display: flex;
-  flex-direction: column;
-}
+    .fact strong {
+      display: block;
+      color: #76566a;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+    }
 
-.project-card:hover {
-  transform: translateY(-4px);
-  border-color: var(--pink);
-}
+    .fact span {
+      font-size: 0.9rem;
+    }
 
-.card-image {
-  width: 100%;
-  height: 210px;
-  object-fit: cover;
-  display: block;
-  background: var(--lavender-light);
-}
+    .research-feature {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      align-items: center;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 25px;
+      box-shadow: var(--shadow);
+    }
 
-.card-image-placeholder {
-  width: 100%;
-  height: 210px;
-  background: linear-gradient(135deg,var(--pink-light),var(--lavender-light));
-  display: grid;
-  place-items: center;
-  color: #88758d;
-  font: 1.5rem "DM Serif Display",serif;
-}
+    .research-feature img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 7px;
+      background: var(--pink-light);
+    }
 
-.card-content { padding: 23px; }
-.card-meta { font-size: .68rem; margin-bottom: 9px; }
-.card-content h3 { font-size: 1.45rem; margin-bottom: 9px; }
-.card-content p { color: var(--muted); font-size: .88rem; }
+    .research-feature h3 {
+      font-size: 1.8rem;
+      margin-bottom: 12px;
+    }
 
-.card-footer {
-  margin-top: 17px;
-  color: #a97888;
-  font-size: .82rem;
-  font-weight: 600;
-}
+    .research-feature p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 14px;
+    }
 
-.research-feature {
-  background: white;
-  border: 1px solid var(--border);
-  border-left: 4px solid var(--pink);
-  border-radius: 12px;
-  padding: 30px;
-  box-shadow: var(--shadow);
-}
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
 
-.research-feature h3 { font-size: 1.7rem; margin: 7px 0; }
-.research-feature p { color: #655e69; font-size: .92rem; margin-bottom: 13px; }
+    .tag {
+      font-size: 0.72rem;
+      background: var(--sage);
+      padding: 6px 10px;
+      border-radius: 4px;
+      color: #526354;
+    }
 
-.poster-layout {
-  display: grid;
-  grid-template-columns: minmax(0,1fr) 1fr;
-  gap: 30px;
-  align-items: center;
-  margin-top: 30px;
-}
+    .poster-preview {
+      margin-top: 28px;
+      background: var(--surface);
+      padding: 22px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+    }
 
-.poster-preview {
-  display: block;
-  width: 100%;
-  max-height: 440px;
-  object-fit: contain;
-  background: var(--lavender-light);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  cursor: zoom-in;
-}
+    .poster-preview h3 {
+      margin-bottom: 12px;
+      font-size: 1.45rem;
+    }
 
-.poster-placeholder {
-  min-height: 300px;
-  background: var(--lavender-light);
-  display: grid;
-  place-items: center;
-  color: #796c8a;
-  text-align: center;
-  padding: 20px;
-  border-radius: 8px;
-}
+    .poster-preview img {
+      width: 100%;
+      max-height: 420px;
+      object-fit: contain;
+      background: #f2f0ed;
+      border-radius: 5px;
+      cursor: zoom-in;
+    }
 
-.poster-copy h3 { font-size: 1.5rem; margin-bottom: 12px; }
-.poster-copy p { color: var(--muted); font-size: .9rem; margin-bottom: 18px; }
+    .poster-preview p {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
 
-.education-card {
-  background: var(--sage-light);
-  border: 1px solid #dce7de;
-  border-radius: 12px;
-  padding: 28px;
-}
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
 
-.education-card h3 { font-size: 1.5rem; margin: 7px 0; }
-.education-card p { color: #68756a; font-size: .9rem; }
+    .project-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
 
-/* Project detail modal */
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 14px 32px rgba(50, 40, 50, 0.10);
+    }
 
-.modal {
-  position: fixed;
-  inset: 0;
-  z-index: 30;
-  background: rgba(35,30,39,.72);
-  display: none;
-  align-items: center;
-  justify-content: center;
-  padding: 22px;
-}
+    .project-card img {
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+      background: var(--pink-light);
+      display: block;
+    }
 
-.modal.open { display: flex; }
+    .project-content {
+      padding: 23px;
+    }
 
-.modal-panel {
-  background: var(--bg);
-  width: min(1050px,100%);
-  max-height: 90vh;
-  overflow-y: auto;
-  border-radius: 14px;
-  position: relative;
-  box-shadow: 0 20px 70px rgba(0,0,0,.2);
-}
+    .project-content h3 {
+      font-size: 1.5rem;
+      margin-bottom: 9px;
+    }
 
-.modal-close {
-  position: sticky;
-  top: 12px;
-  float: right;
-  z-index: 2;
-  margin: 12px 12px -45px 0;
-  width: 36px;
-  height: 36px;
-  border: 1px solid var(--border);
-  border-radius: 50%;
-  background: white;
-  color: var(--text);
-  cursor: pointer;
-  font-size: 1.2rem;
-}
+    .project-content p {
+      color: var(--muted);
+      font-size: 0.86rem;
+    }
 
-.modal-body {
-  display: grid;
-  grid-template-columns: .9fr 1.1fr;
-  gap: 30px;
-  padding: 35px;
-}
+    .view-more {
+      display: inline-block;
+      margin-top: 16px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #a66e86;
+    }
 
-.modal-description { padding-top: 12px; }
-.modal-description h2 { font-size: 2rem; margin: 10px 0 15px; }
-.modal-description p { color: var(--muted); font-size: .92rem; margin-bottom: 15px; }
+    .education-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
 
-.gallery-main {
-  width: 100%;
-  height: 350px;
-  background: var(--lavender-light);
-  object-fit: contain;
-  border-radius: 8px;
-}
+    .milestone-card {
+      border-left: 3px solid var(--pink);
+      padding: 8px 0 8px 20px;
+      margin-bottom: 22px;
+    }
 
-.gallery-caption { color: var(--muted); font-size: .8rem; margin: 9px 0 14px; }
+    .milestone-card:last-child {
+      margin-bottom: 0;
+    }
 
-.gallery-thumbnails {
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  gap: 9px;
-}
+    .milestone-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 5px;
+    }
 
-.gallery-thumbnails button {
-  border: 2px solid transparent;
-  padding: 0;
-  background: transparent;
-  cursor: pointer;
-  border-radius: 5px;
-  overflow: hidden;
-}
+    .milestone-card p {
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
 
-.gallery-thumbnails button.active { border-color: var(--pink); }
+    .contact-card {
+      background: linear-gradient(120deg, var(--pink-light), #f1edf5, var(--sage));
+      border-radius: 12px;
+      padding: 45px;
+      text-align: center;
+    }
 
-.gallery-thumbnails img {
-  width: 100%;
-  height: 75px;
-  display: block;
-  object-fit: cover;
-  background: var(--lavender-light);
-}
+    .contact-card h2 {
+      font-size: 2.5rem;
+      margin-bottom: 12px;
+    }
 
-.contact-section {
-  background: #f1ebf2;
-  border-top: 1px solid #e6dce9;
-}
+    .contact-card p {
+      color: #6f6570;
+      margin-bottom: 20px;
+    }
 
-.contact-content { max-width: 700px; }
-.contact-content h2 { font-size: 2.5rem; }
-.contact-content p { color: var(--muted); margin: 14px 0 24px; }
+    .contact-button {
+      display: inline-block;
+      background: #654e60;
+      color: white;
+      padding: 12px 22px;
+      border-radius: 5px;
+      font-size: 0.85rem;
+      transition: background 0.2s;
+    }
 
-footer { padding: 25px 0; color: var(--muted); font-size: .78rem; text-align: center; }
+    .contact-button:hover {
+      background: #493747;
+    }
 
-@media(max-width:760px) {
-  .container { width: min(100% - 38px,600px); }
-  nav { align-items: flex-start; flex-direction: column; padding: 14px 0; }
-  .nav-links { width: 100%; overflow-x: auto; gap: 17px; padding-bottom: 4px; }
-  .nav-links a { font-size: .75rem; }
-  .hero { grid-template-columns: 1fr; padding: 65px 0; gap: 35px; }
-  .hero-mark { width: 175px; height: 205px; }
-  .about-grid,.card-grid,.poster-layout,.modal-body { grid-template-columns: 1fr; }
-  section { padding: 52px 0; }
-  .modal { padding: 10px; }
-  .modal-body { padding: 24px; gap: 22px; }
-  .gallery-main { height: 260px; }
-}
-</style>
+    footer {
+      text-align: center;
+      padding: 30px 0;
+      color: var(--muted);
+      font-size: 0.78rem;
+      border-top: 1px solid var(--border);
+    }
+
+    /* Gallery modal */
+
+    .modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      background: rgba(28, 24, 29, 0.78);
+      padding: 25px;
+      overflow-y: auto;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal.active {
+      display: flex;
+    }
+
+    .modal-content {
+      position: relative;
+      width: min(1000px, 100%);
+      max-height: 90vh;
+      overflow-y: auto;
+      background: var(--surface);
+      border-radius: 12px;
+      padding: 30px;
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 30px;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 12px;
+      right: 17px;
+      border: none;
+      background: transparent;
+      font-size: 2rem;
+      color: #665765;
+      cursor: pointer;
+      z-index: 2;
+    }
+
+    .modal-info {
+      padding-top: 20px;
+    }
+
+    .modal-info h2 {
+      font-size: 2rem;
+      margin-bottom: 14px;
+    }
+
+    .modal-info p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 14px;
+    }
+
+    .modal-gallery img {
+      width: 100%;
+      height: 350px;
+      object-fit: contain;
+      background: #f2f0ed;
+      border-radius: 7px;
+    }
+
+    .image-caption {
+      color: var(--muted);
+      font-size: 0.78rem;
+      margin: 8px 0 14px;
+    }
+
+    .thumbnails {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .thumbnails button {
+      width: 75px;
+      height: 60px;
+      border: 2px solid transparent;
+      border-radius: 5px;
+      overflow: hidden;
+      padding: 0;
+      cursor: pointer;
+      background: #eee;
+    }
+
+    .thumbnails button.selected {
+      border-color: #a66e86;
+    }
+
+    .thumbnails img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .poster-modal-content {
+      position: relative;
+      width: min(1100px, 100%);
+      max-height: 92vh;
+      overflow: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .poster-modal-content img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    @media (max-width: 760px) {
+      .navbar {
+        align-items: flex-start;
+        padding: 16px 0;
+        flex-direction: column;
+      }
+
+      .nav-links {
+        gap: 12px;
+        font-size: 0.75rem;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        padding: 65px 0;
+        gap: 30px;
+      }
+
+      .hero-visual {
+        min-height: 220px;
+      }
+
+      .about-grid,
+      .research-feature,
+      .project-grid,
+      .education-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .research-feature img {
+        height: 220px;
+      }
+
+      .modal-content {
+        grid-template-columns: 1fr;
+        padding: 25px 18px;
+      }
+
+      .modal-gallery img {
+        height: 260px;
+      }
+
+      .contact-card {
+        padding: 30px 20px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
-  <nav class="container">
-    <a href="#home" class="brand">Pierina Flores</a>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#research">Research</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#volunteering">Volunteering</a></li>
-      <li><a href="#involvement">Involvement</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <div class="container navbar">
+    <a class="logo" href="#home">Academic Portfolio</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#leadership">Leadership</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
 <main>
-<div class="container">
 
-<section class="hero" id="home">
-  <div>
-    <p class="eyebrow">Academic Portfolio</p>
-    <h1>Pierina Flores</h1>
-    <p class="hero-subtitle">Physics Student · Research · Scientific Exploration</p>
-    <p class="hero-description">
-      I am a physics student interested in exploring the connections
-      between fundamental science, emerging technologies, and the
-      natural world. My goal is to contribute to scientific research
-      while continuing to grow as a researcher and educator.
-    </p>
-    <div class="hero-actions">
-      <a href="#research" class="button primary">Explore My Work</a>
-      <a href="#contact" class="button secondary">Get in Touch</a>
-    </div>
-  </div>
-  <div class="hero-mark"><span class="initials">PF</span></div>
-</section>
-
-<section id="about">
-  <div class="section-heading">
-    <p class="section-label">Introduction</p>
-    <h2>About Me</h2>
-    <p>My academic background, interests, and the questions that inspire me.</p>
-  </div>
-
-  <div class="about-grid">
-    <div class="about-copy">
-      <p>
-        I am pursuing my studies in physics at Miami Dade College,
-        where I have developed a strong interest in scientific inquiry,
-        problem-solving, and interdisciplinary research.
-      </p>
-      <p>
-        My academic interests include quantum physics, nuclear physics,
-        and biophysics. I am especially interested in understanding how
-        scientific principles can be applied across different fields.
-      </p>
-      <p>
-        Beyond the classroom, I enjoy collaborating on projects,
-        developing new skills, and connecting with the scientific
-        and academic community.
-      </p>
-    </div>
-
-    <aside class="interest-panel">
-      <h3>Areas of Interest</h3>
-      <ul class="interest-list">
-        <li>Quantum Physics</li>
-        <li>Nuclear Physics</li>
-        <li>Biophysics</li>
-        <li>Scientific Computing</li>
-        <li>Interdisciplinary Research</li>
-      </ul>
-    </aside>
-  </div>
-</section>
-
-<section id="research">
-  <div class="section-heading">
-    <p class="section-label">Research Experience</p>
-    <h2>Research & Discovery</h2>
-    <p>Scientific questions explored through experimentation and technical problem-solving.</p>
-  </div>
-
-  <article class="research-feature">
-    <p class="card-meta">Summer 2026 · Research Traineeship</p>
-    <h3>University of Miami Research Experience</h3>
-    <p style="color:#a97888;font-weight:600;">Drosophila Color Preference Research</p>
-    <p>
-      Participated in a summer research traineeship investigating
-      color preferences in Drosophila. The project involved developing
-      and refining experimental setups to study behavioral responses
-      under controlled lighting conditions.
-    </p>
-    <p>
-      Contributed to the development of a 24-well experimental arena,
-      worked with lighting and imaging configurations, and helped
-      troubleshoot experimental variables that could influence
-      observations. The experience introduced me to experimental
-      design, image analysis, and research methods.
-    </p>
-  </article>
-
-  <div class="poster-layout">
+  <!-- HOME -->
+  <div class="container hero" id="home">
     <div>
-      <!-- Replace this placeholder with your poster image. -->
-      <div class="poster-placeholder" id="posterPlaceholder">
-        <div>
-          <strong>Research Poster</strong>
-          <p>Add your poster image to the images folder.</p>
+      <div class="eyebrow">Physics Student · Researcher · Student Leader</div>
+      <h1>Curiosity leads to discovery.</h1>
+      <p>
+        Welcome to my academic portfolio. I am a physics student interested
+        in exploring the questions that connect science, technology, and
+        the natural world. Through research, collaboration, and student
+        leadership, I aim to keep learning and contribute to meaningful work.
+      </p>
+      <div class="hero-note">Exploring science, one question at a time.</div>
+    </div>
+
+    <div class="hero-visual">
+      <span>Science begins<br>with curiosity.</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-heading">
+        <div class="eyebrow">A little about me</div>
+        <h2>About Me</h2>
+        <p>My academic interests, goals, and the questions that motivate me.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="card">
+          <p>
+            I am a physics student at Miami Dade College and a member of the
+            Honors College. I enjoy exploring scientific ideas, learning
+            through hands-on experiences, and finding connections between
+            different areas of STEM.
+          </p>
+          <br>
+          <p>
+            My interests include biophysics, quantum physics, and nuclear
+            physics. I hope to continue my education through research and
+            eventually pursue a career that combines scientific discovery
+            with university-level teaching.
+          </p>
+
+          <div class="interests">
+            <span class="interest">Physics</span>
+            <span class="interest">Biophysics</span>
+            <span class="interest">Quantum Science</span>
+            <span class="interest">Research</span>
+            <span class="interest">STEM Education</span>
+          </div>
+        </div>
+
+        <div class="card quick-facts">
+          <div class="fact">
+            <strong>Institution</strong>
+            <span>Miami Dade College</span>
+          </div>
+          <div class="fact">
+            <strong>Academic Field</strong>
+            <span>Physics</span>
+          </div>
+          <div class="fact">
+            <strong>Academic Community</strong>
+            <span>Honors College</span>
+          </div>
+          <div class="fact">
+            <strong>Long-Term Goal</strong>
+            <span>Research and University Teaching</span>
+          </div>
         </div>
       </div>
-      <img
-        src="images/research-poster.jpg"
-        alt="University of Miami research poster"
-        class="poster-preview"
-        id="posterImage"
-        hidden
-        onclick="openPoster()"
-      >
     </div>
+  </section>
 
-    <div class="poster-copy">
-      <p class="section-label">Research Presentation</p>
-      <h3>Project Poster</h3>
-      <p>
-        A visual overview of the research question, experimental
-        approach, methodology, and findings from my summer research
-        experience.
-      </p>
-      <p>
-        The poster is available to view separately so visitors can
-        explore the research without making the main page too crowded.
-      </p>
-      <button class="button secondary" onclick="openPoster()" id="posterButton" disabled>
-        View Research Poster
-      </button>
+  <!-- RESEARCH -->
+  <section id="research">
+    <div class="container">
+      <div class="section-heading">
+        <div class="eyebrow">Scientific exploration</div>
+        <h2>Research Experience</h2>
+        <p>
+          Hands-on research experiences that have helped me develop
+          technical skills, scientific curiosity, and problem-solving abilities.
+        </p>
+      </div>
+
+      <div class="research-feature">
+        <img src="images/research-lab-1.jpg"
+             alt="Summer research laboratory"
+             onerror="this.style.display='none'">
+
+        <div>
+          <div class="eyebrow">University of Miami · Summer 2026</div>
+          <h3>Drosophila Color Preference Research</h3>
+          <p>
+            During a summer research traineeship at the University of Miami,
+            I contributed to a project investigating color preferences in
+            Drosophila. The experience involved experimental design,
+            equipment development, image analysis, and troubleshooting.
+          </p>
+          <p>
+            I worked with a 24-well arena setup, lighting configurations,
+            camera systems, and MATLAB-based image analysis. I also helped
+            address experimental challenges involving lighting consistency
+            and environmental conditions.
+          </p>
+          <div class="tag-list">
+            <span class="tag">Experimental Design</span>
+            <span class="tag">MATLAB</span>
+            <span class="tag">Image Analysis</span>
+            <span class="tag">Laboratory Research</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="poster-preview">
+        <h3>Research Poster</h3>
+        <img
+          src="images/research-poster.jpg"
+          alt="Research poster preview"
+          onclick="openPoster()"
+          onerror="this.style.display='none'">
+        <p>Click the poster to view it in a larger format.</p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="projects">
-  <div class="section-heading">
-    <p class="section-label">Academic Exploration</p>
-    <h2>Projects & Interests</h2>
-    <p>Click a project to explore its photos, descriptions, and additional details.</p>
-  </div>
-
-  <div class="card-grid">
-
-    <button class="project-card" onclick="openProject('quantum')">
-      <div class="card-image-placeholder">Quantum Computing</div>
-      <div class="card-content">
-        <p class="card-meta">Scientific Computing</p>
-        <h3>Quantum Computing</h3>
-        <p>Exploring quantum algorithms, information science, and the principles of quantum mechanics.</p>
-        <span class="card-footer">Explore project →</span>
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-heading">
+        <div class="eyebrow">Beyond the classroom</div>
+        <h2>Projects & Interests</h2>
+        <p>
+          Academic projects and topics that reflect my curiosity
+          and growing interests in science.
+        </p>
       </div>
-    </button>
 
-    <button class="project-card" onclick="openProject('biophysics')">
-      <div class="card-image-placeholder">Biophysics</div>
-      <div class="card-content">
-        <p class="card-meta">Interdisciplinary Science</p>
-        <h3>Biophysics</h3>
-        <p>Exploring how physical principles and quantitative methods can help us understand biological systems.</p>
-        <span class="card-footer">Explore project →</span>
+      <div class="project-grid">
+
+        <article class="project-card" onclick="openProject('quantum')">
+          <img src="images/quantum-1.jpg" alt="Quantum science project"
+               onerror="this.style.display='none'">
+          <div class="project-content">
+            <h3>Quantum Computing</h3>
+            <p>
+              Exploring quantum computing concepts, emerging technologies,
+              and their potential applications.
+            </p>
+            <span class="view-more">Explore project →</span>
+          </div>
+        </article>
+
+        <article class="project-card" onclick="openProject('biophysics')">
+          <img src="images/biophysics-1.jpg" alt="Biophysics interests"
+               onerror="this.style.display='none'">
+          <div class="project-content">
+            <h3>Biophysics</h3>
+            <p>
+              Exploring the relationship between physical principles
+              and biological systems.
+            </p>
+            <span class="view-more">Explore interest →</span>
+          </div>
+        </article>
+
       </div>
-    </button>
-
-    <button class="project-card" onclick="openProject('verdant')">
-      <div class="card-image-placeholder">Verdant</div>
-      <div class="card-content">
-        <p class="card-meta">Student Publication</p>
-        <h3>Verdant Student Magazine</h3>
-        <p>Website development and digital content for a student publication focused on research and creative thought.</p>
-        <span class="card-footer">Explore project →</span>
-      </div>
-    </button>
-
-  </div>
-</section>
-
-<section id="volunteering">
-  <div class="section-heading">
-    <p class="section-label">Community Engagement</p>
-    <h2>Volunteering & Service</h2>
-    <p>Experiences contributing to my community, supporting initiatives, and working with others.</p>
-  </div>
-
-  <div class="card-grid">
-
-    <button class="project-card" onclick="openProject('volunteer1')">
-      <div class="card-image-placeholder">Community Service</div>
-      <div class="card-content">
-        <p class="card-meta">Volunteering Experience</p>
-        <h3>Community Engagement</h3>
-        <p>Add a short description of this volunteering experience.</p>
-        <span class="card-footer">View experience →</span>
-      </div>
-    </button>
-
-    <button class="project-card" onclick="openProject('volunteer2')">
-      <div class="card-image-placeholder">Student Initiatives</div>
-      <div class="card-content">
-        <p class="card-meta">Volunteering Experience</p>
-        <h3>Student & Campus Initiatives</h3>
-        <p>Add details about events, outreach, or campus activities you supported.</p>
-        <span class="card-footer">View experience →</span>
-      </div>
-    </button>
-
-  </div>
-</section>
-
-<section id="involvement">
-  <div class="section-heading">
-    <p class="section-label">Beyond Academics</p>
-    <h2>Leadership & Involvement</h2>
-    <p>Contributing to student communities through collaboration and creative work.</p>
-  </div>
-
-  <div class="card-grid">
-    <article class="research-feature">
-      <p class="card-meta">Website Lead</p>
-      <h3>Verdant Student Magazine</h3>
-      <p>
-        Helping develop and maintain a student publication website,
-        coordinate digital content, and support a platform for student
-        research and creative expression.
-      </p>
-      <a href="https://rinafls180-code.github.io/Verdant/"
-         target="_blank" rel="noopener noreferrer"
-         class="card-footer">Visit Verdant →</a>
-    </article>
-
-    <article class="research-feature">
-      <p class="card-meta">Student Organization</p>
-      <h3>Engineers For A Sustainable World</h3>
-      <p>
-        Engineers for a Sustainable World (ESW) is a student-led
-        organization at Miami Dade College that brings together
-        students passionate about engineering, sustainability, and
-        innovation. The club focuses on developing sustainable solutions
-        to real-world challenges through collaborative projects, community
-        outreach, volunteering, and educational initiatives. ESW encourages
-        students to use their technical skills and creativity to make a
-        positive environmental and social impact.
-      </p>
-    </article>
-
-    <article class="research-feature">
-      <p class="card-meta">Academic Community</p>
-      <h3>Honors College</h3>
-      <p>
-        Participating in an academic community that encourages
-        intellectual exploration and interdisciplinary learning.
-      </p>
-    </article>
-  </div>
-</section>
-
-<section id="education">
-  <div class="section-heading">
-    <p class="section-label">Academic Background</p>
-    <h2>Education</h2>
-  </div>
-
-  <div class="education-card">
-    <p class="card-meta">Current Student</p>
-    <h3>Miami Dade College</h3>
-    <p>Physics · Honors College</p>
-    <p style="margin-top:12px;">
-      Building a foundation in mathematics and the physical sciences
-      while pursuing research and academic opportunities.
-    </p>
-  </div>
-</section>
-
-</div>
-
-<section class="contact-section" id="contact">
-  <div class="container contact-content">
-    <p class="section-label">Connect</p>
-    <h2>Let's Connect</h2>
-    <p>
-      I welcome opportunities to connect with researchers, students,
-      and academic communities interested in science and collaboration.
-    </p>
-    <div class="contact-links">
-      <a href="mailto:YOUR-EMAIL@example.com" class="button primary">Email Me</a>
-      <a href="https://github.com/" target="_blank" rel="noopener noreferrer"
-         class="button secondary">GitHub</a>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- LEADERSHIP -->
+  <section id="leadership">
+    <div class="container">
+      <div class="section-heading">
+        <div class="eyebrow">Community & collaboration</div>
+        <h2>Leadership & Involvement</h2>
+        <p>
+          Experiences that allow me to contribute to my college community,
+          collaborate with others, and support student engagement.
+        </p>
+      </div>
+
+      <div class="project-grid">
+
+        <article class="project-card" onclick="openProject('verdantLeadership')">
+          <img src="images/verdant-leadership-1.jpg" alt="Verdant student magazine"
+               onerror="this.style.display='none'">
+          <div class="project-content">
+            <h3>Verdant Student Magazine</h3>
+            <p>
+              Website lead for a student magazine highlighting journalism,
+              research, creativity, and student perspectives.
+            </p>
+            <span class="view-more">View involvement →</span>
+          </div>
+        </article>
+
+        <article class="project-card" onclick="openProject('esw')">
+          <img src="images/esw-1.jpg" alt="Engineers for a Sustainable World"
+               onerror="this.style.display='none'">
+          <div class="project-content">
+            <h3>Engineers for a Sustainable World</h3>
+            <p>
+              Involved in a student organization focused on sustainability,
+              engineering, and community engagement.
+            </p>
+            <span class="view-more">View involvement →</span>
+          </div>
+        </article>
+
+        <article class="project-card" onclick="openProject('honors')">
+          <img src="images/honors-1.jpg" alt="Honors College"
+               onerror="this.style.display='none'">
+          <div class="project-content">
+            <h3>Honors College</h3>
+            <p>
+              Participating in an academic community that encourages
+              intellectual growth, collaboration, and leadership.
+            </p>
+            <span class="view-more">View involvement →</span>
+          </div>
+        </article>
+
+        <article class="project-card" onclick="openProject('volunteer1')">
+          <img src="images/volunteer-1.jpg" alt="Volunteer activity"
+               onerror="this.style.display='none'">
+          <div class="project-content">
+            <h3>Volunteering & Community Engagement</h3>
+            <p>
+              Participating in opportunities to support the community
+              and contribute to meaningful initiatives.
+            </p>
+            <span class="view-more">View activities →</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="container">
+      <div class="section-heading">
+        <div class="eyebrow">Academic journey</div>
+        <h2>Education & Milestones</h2>
+        <p>
+          My academic background, achievements, and important moments
+          along the way.
+        </p>
+      </div>
+
+      <div class="education-grid">
+
+        <article class="project-card" onclick="openProject('college')">
+          <img src="images/college-1.jpg" alt="Miami Dade College"
+               onerror="this.style.display='none'">
+          <div class="project-content">
+            <h3>Miami Dade College</h3>
+            <p>
+              Pursuing studies in physics while participating in the
+              Honors College and exploring research opportunities.
+            </p>
+            <span class="view-more">View education gallery →</span>
+          </div>
+        </article>
+
+        <article class="project-card" onclick="openProject('academicMilestones')">
+          <img src="images/milestone-1.jpg" alt="Academic milestone"
+               onerror="this.style.display='none'">
+          <div class="project-content">
+            <h3>Academic Milestones</h3>
+            <p>
+              Celebrating academic experiences, presentations,
+              achievements, and opportunities for growth.
+            </p>
+            <span class="view-more">View milestones →</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-card">
+        <div class="eyebrow">Let's connect</div>
+        <h2>Thank you for visiting.</h2>
+        <p>
+          I am always interested in connecting with people who share
+          an interest in science, research, education, and collaboration.
+        </p>
+        <a class="contact-button" href="mailto:YOUR-EMAIL@example.com">
+          Get in Touch
+        </a>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 <footer>
-  © <span id="year"></span> Pierina Flores · Academic Portfolio
+  <div class="container">
+    © 2026 Academic Portfolio · Designed and maintained by Pierina Flores
+  </div>
 </footer>
 
-<!-- Reusable project and volunteering gallery -->
-<div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-  <div class="modal-panel">
-    <button class="modal-close" onclick="closeModal()" aria-label="Close">×</button>
-    <div class="modal-body">
-      <div class="modal-description">
-        <p class="section-label" id="modalCategory"></p>
-        <h2 id="modalTitle"></h2>
-        <p id="modalDescription"></p>
-        <p id="modalExtra"></p>
-      </div>
+<!-- PROJECT GALLERY MODAL -->
+<div class="modal" id="projectModal" onclick="closeProjectOutside(event)">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeProject()" aria-label="Close">&times;</button>
 
-      <div class="modal-gallery">
-        <img id="galleryMain" class="gallery-main" src="" alt="">
-        <p class="gallery-caption" id="galleryCaption"></p>
-        <div class="gallery-thumbnails" id="galleryThumbnails"></div>
-      </div>
+    <div class="modal-info">
+      <div class="eyebrow" id="modalCategory"></div>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDescription"></p>
+      <p id="modalExtra"></p>
+    </div>
+
+    <div class="modal-gallery">
+      <img id="mainGalleryImage" src="" alt="Gallery image">
+      <p class="image-caption" id="imageCaption"></p>
+      <div class="thumbnails" id="thumbnails"></div>
     </div>
   </div>
 </div>
 
-<!-- Poster viewer -->
-<div class="modal" id="posterModal" role="dialog" aria-modal="true" aria-label="Research poster">
-  <div class="modal-panel" style="max-width:900px;">
-    <button class="modal-close" onclick="closePoster()" aria-label="Close">×</button>
-    <div style="padding:35px;">
-      <h2 style="margin-bottom:18px;">Research Poster</h2>
-      <img id="posterLarge" src="images/research-poster.jpg"
-           alt="Research poster enlarged"
-           style="width:100%;height:auto;">
-    </div>
+<!-- POSTER MODAL -->
+<div class="modal" id="posterModal" onclick="closePosterOutside(event)">
+  <div class="poster-modal-content">
+    <button class="modal-close" onclick="closePoster()" aria-label="Close">&times;</button>
+    <img src="images/research-poster.jpg" alt="Full research poster">
   </div>
 </div>
 
 <script>
-document.getElementById("year").textContent = new Date().getFullYear();
+  /*
+    PROJECT CONTENT AND GALLERIES
 
-/*
-  ADD YOUR PHOTOS HERE.
+    Add your images to the images folder.
+    Each image path must match its actual filename.
+  */
 
-  Put your image files inside the images folder.
-  Add another object to the images array for every additional photo.
-  Each object needs a file path and a caption.
-*/
+  const projects = {
 
-const projects = {
-  quantum: {
-    category: "Scientific Computing",
-    title: "Quantum Computing",
-    description: "Exploring the principles of quantum computing, quantum algorithms, and the relationship between quantum mechanics and information science.",
-    extra: "Add your project details, research notes, coursework, or relevant accomplishments here.",
-    images: [
-      { src: "images/quantum-1.jpg", caption: "Add a caption describing this image." },
-      { src: "images/quantum-2.jpg", caption: "Add another caption here." }
-    ]
-  },
+    quantum: {
+      category: "Academic Interest",
+      title: "Quantum Computing",
+      description: "An exploration of quantum computing, including the principles that distinguish quantum systems from classical computing. This interest has led me to investigate quantum algorithms, emerging technologies, and potential applications.",
+      extra: "Topics of interest include qubits, quantum information, optimization, and quantum technologies.",
+      images: [
+        { src: "images/quantum-1.jpg", caption: "Quantum computing research and exploration." },
+        { src: "images/quantum-2.jpg", caption: "Additional project notes or visual materials." }
+      ]
+    },
 
-  biophysics: {
-    category: "Interdisciplinary Science",
-    title: "Biophysics",
-    description: "Exploring the application of physical principles and quantitative methods to biological systems.",
-    extra: "Add relevant work, ideas, presentations, or academic projects here.",
-    images: [
-      { src: "images/biophysics-1.jpg", caption: "Add a caption describing this image." }
-    ]
-  },
+    biophysics: {
+      category: "Academic Interest",
+      title: "Biophysics",
+      description: "Biophysics combines the principles of physics with the complexity of biological systems. I am interested in understanding how physical models and experimental methods can help explain biological processes.",
+      extra: "This interest connects my background in physics with questions about living systems and scientific research.",
+      images: [
+        { src: "images/biophysics-1.jpg", caption: "Exploring the connection between physics and biology." },
+        { src: "images/biophysics-2.jpg", caption: "Additional biophysics materials." }
+      ]
+    },
 
-  verdant: {
-    category: "Student Publication",
-    title: "Verdant Student Magazine",
-    description: "Working as website lead for Verdant, a student publication highlighting research, sustainability, engineering, innovation, and student perspectives.",
-    extra: "Include screenshots of the website, magazine pages, planning work, or other contributions.",
-    images: [
-      { src: "images/verdant-1.jpg", caption: "The Verdant website." },
-      { src: "images/verdant-2.jpg", caption: "A magazine feature or page." }
-    ]
-  },
+    verdantLeadership: {
+      category: "Leadership & Involvement",
+      title: "Verdant Student Magazine",
+      description: "As website lead, I help develop and maintain Verdant, a student magazine designed to showcase student journalism, research, sustainability, engineering, creativity, and campus perspectives.",
+      extra: "My responsibilities include website development, organizing digital content, coordinating contributions, and helping shape the magazine's online presence.",
+      images: [
+        { src: "images/verdant-leadership-1.jpg", caption: "Verdant's website and digital magazine." },
+        { src: "images/verdant-leadership-2.jpg", caption: "Magazine content and editorial work." }
+      ]
+    },
 
-  volunteer1: {
-    category: "Community Engagement",
-    title: "Community Engagement",
-    description: "Add the name of the organization, event, or community initiative you volunteered with.",
-    extra: "Describe what you did, who benefited, and what you learned from the experience.",
-    images: [
-      { src: "images/volunteer-1.jpg", caption: "Add a caption for this volunteering photo." },
-      { src: "images/volunteer-2.jpg", caption: "Add another volunteering photo." }
-    ]
-  },
+    esw: {
+      category: "Leadership & Involvement",
+      title: "Engineers for a Sustainable World",
+      description: "Engineers for a Sustainable World is a student organization that brings together people interested in using engineering and innovation to address sustainability challenges.",
+      extra: "Through student engagement and organizational activities, I have opportunities to connect with others interested in sustainable solutions.",
+      images: [
+        { src: "images/esw-1.jpg", caption: "ESW activities and events." },
+        { src: "images/esw-2.jpg", caption: "Organization and community involvement." }
+      ]
+    },
 
-  volunteer2: {
-    category: "Campus Service",
-    title: "Student & Campus Initiatives",
-    description: "Add details about the campus event, student initiative, or outreach activity.",
-    extra: "You can include your responsibilities, the event's purpose, and your contribution.",
-    images: [
-      { src: "images/campus-1.jpg", caption: "Add a caption for this photo." }
-    ]
-  }
-};
+    honors: {
+      category: "Academic Community",
+      title: "Honors College",
+      description: "Being part of the Honors College has provided opportunities to engage in a challenging academic environment and connect with students who value intellectual curiosity and learning.",
+      extra: "The Honors College is an important part of my academic journey and continued development as a student.",
+      images: [
+        { src: "images/honors-1.jpg", caption: "Honors College activities." },
+        { src: "images/honors-2.jpg", caption: "Academic events and experiences." }
+      ]
+    },
 
-function openProject(key) {
-  const project = projects[key];
-  if (!project) return;
+    volunteer1: {
+      category: "Community Engagement",
+      title: "Volunteering & Community Engagement",
+      description: "I value opportunities to contribute to my community, collaborate with others, and participate in initiatives that make a positive difference.",
+      extra: "This gallery can include volunteering events, service activities, and community initiatives.",
+      images: [
+        { src: "images/volunteer-1.jpg", caption: "Community engagement activity." },
+        { src: "images/volunteer-2.jpg", caption: "Additional volunteering experience." }
+      ]
+    },
 
-  document.getElementById("modalCategory").textContent = project.category;
-  document.getElementById("modalTitle").textContent = project.title;
-  document.getElementById("modalDescription").textContent = project.description;
-  document.getElementById("modalExtra").textContent = project.extra;
+    college: {
+      category: "Education",
+      title: "Miami Dade College",
+      description: "I am pursuing my academic studies in physics at Miami Dade College while participating in the Honors College and seeking opportunities to expand my academic and research experience.",
+      extra: "My time at MDC has helped me develop a foundation in the sciences and explore future academic opportunities.",
+      images: [
+        { src: "images/college-1.jpg", caption: "Miami Dade College campus." },
+        { src: "images/college-2.jpg", caption: "Academic life and campus experiences." }
+      ]
+    },
 
-  const main = document.getElementById("galleryMain");
-  const caption = document.getElementById("galleryCaption");
-  const thumbnails = document.getElementById("galleryThumbnails");
+    academicMilestones: {
+      category: "Education",
+      title: "Academic Milestones",
+      description: "This collection highlights meaningful moments throughout my academic journey, including academic events, presentations, recognitions, and opportunities for personal and professional growth.",
+      extra: "I will continue adding milestones as I progress through my education.",
+      images: [
+        { src: "images/milestone-1.jpg", caption: "An important academic milestone." },
+        { src: "images/milestone-2.jpg", caption: "Another memorable academic experience." }
+      ]
+    }
+  };
 
-  thumbnails.innerHTML = "";
+  function openProject(key) {
+    const project = projects[key];
+    if (!project) return;
 
-  if (!project.images || project.images.length === 0) {
-    main.removeAttribute("src");
-    main.alt = "No images added yet";
-    caption.textContent = "No photos have been added to this gallery yet.";
-  } else {
-    showGalleryImage(project.images[0], main, caption);
+    document.getElementById("modalCategory").textContent = project.category;
+    document.getElementById("modalTitle").textContent = project.title;
+    document.getElementById("modalDescription").textContent = project.description;
+    document.getElementById("modalExtra").textContent = project.extra;
 
-    project.images.forEach((photo, index) => {
-      const button = document.createElement("button");
-      const thumb = document.createElement("img");
+    const mainImage = document.getElementById("mainGalleryImage");
+    const caption = document.getElementById("imageCaption");
+    const thumbnails = document.getElementById("thumbnails");
 
-      thumb.src = photo.src;
-      thumb.alt = photo.caption || `Gallery image ${index + 1}`;
+    thumbnails.innerHTML = "";
 
-      button.appendChild(thumb);
-      button.addEventListener("click", () => {
-        showGalleryImage(photo, main, caption);
-        document.querySelectorAll(".gallery-thumbnails button")
-          .forEach(item => item.classList.remove("active"));
-        button.classList.add("active");
+    function selectImage(index) {
+      const selected = project.images[index];
+      mainImage.src = selected.src;
+      mainImage.alt = selected.caption;
+      caption.textContent = selected.caption;
+
+      Array.from(thumbnails.children).forEach((button, i) => {
+        button.classList.toggle("selected", i === index);
       });
+    }
 
-      if (index === 0) button.classList.add("active");
+    project.images.forEach((image, index) => {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.setAttribute("aria-label", "View image " + (index + 1));
+
+      const thumbnail = document.createElement("img");
+      thumbnail.src = image.src;
+      thumbnail.alt = image.caption;
+
+      button.appendChild(thumbnail);
+      button.addEventListener("click", () => selectImage(index));
       thumbnails.appendChild(button);
     });
+
+    if (project.images.length > 0) {
+      selectImage(0);
+    }
+
+    document.getElementById("projectModal").classList.add("active");
+    document.body.style.overflow = "hidden";
   }
 
-  document.getElementById("projectModal").classList.add("open");
-  document.body.style.overflow = "hidden";
-}
-
-function showGalleryImage(photo, main, caption) {
-  main.src = photo.src;
-  main.alt = photo.caption || "Project gallery image";
-  caption.textContent = photo.caption || "";
-}
-
-function closeModal() {
-  document.getElementById("projectModal").classList.remove("open");
-  document.body.style.overflow = "";
-}
-
-function openPoster() {
-  document.getElementById("posterModal").classList.add("open");
-  document.body.style.overflow = "hidden";
-}
-
-function closePoster() {
-  document.getElementById("posterModal").classList.remove("open");
-  document.body.style.overflow = "";
-}
-
-document.getElementById("posterImage").addEventListener("load", function() {
-  this.hidden = false;
-  document.getElementById("posterPlaceholder").hidden = true;
-  document.getElementById("posterButton").disabled = false;
-});
-
-document.getElementById("posterImage").addEventListener("error", function() {
-  this.hidden = true;
-  document.getElementById("posterPlaceholder").hidden = false;
-  document.getElementById("posterButton").disabled = true;
-});
-
-document.getElementById("projectModal").addEventListener("click", function(event) {
-  if (event.target === this) closeModal();
-});
-
-document.getElementById("posterModal").addEventListener("click", function(event) {
-  if (event.target === this) closePoster();
-});
-
-document.addEventListener("keydown", function(event) {
-  if (event.key === "Escape") {
-    closeModal();
-    closePoster();
+  function closeProject() {
+    document.getElementById("projectModal").classList.remove("active");
+    document.body.style.overflow = "";
   }
-});
+
+  function closeProjectOutside(event) {
+    if (event.target.id === "projectModal") {
+      closeProject();
+    }
+  }
+
+  function openPoster() {
+    document.getElementById("posterModal").classList.add("active");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closePoster() {
+    document.getElementById("posterModal").classList.remove("active");
+    document.body.style.overflow = "";
+  }
+
+  function closePosterOutside(event) {
+    if (event.target.id === "posterModal") {
+      closePoster();
+    }
+  }
+
+  document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape") {
+      closeProject();
+      closePoster();
+    }
+  });
 </script>
 
 </body>
