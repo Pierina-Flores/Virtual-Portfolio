@@ -27,16 +27,9 @@
       --sans: "Inter", Arial, sans-serif;
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
-    html {
-      scroll-behavior: smooth;
-      scroll-padding-top: 90px;
-    }
+    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
 
     body {
       background: var(--background);
@@ -45,19 +38,10 @@
       line-height: 1.7;
     }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; }
 
-    button {
-      font: inherit;
-    }
-
-    .container {
-      width: min(1100px, 90%);
-      margin: auto;
-    }
+    .container { width: min(1100px, 90%); margin: auto; }
 
     header {
       position: sticky;
@@ -76,11 +60,7 @@
       gap: 20px;
     }
 
-    .logo {
-      font-family: var(--serif);
-      font-size: 1.35rem;
-      color: #594653;
-    }
+    .logo { font-family: var(--serif); font-size: 1.35rem; color: #594653; }
 
     .nav-links {
       display: flex;
@@ -91,12 +71,9 @@
       color: var(--muted);
     }
 
-    .nav-links a:hover {
-      color: #a66e86;
-    }
+    .nav-links a:hover { color: #a66e86; }
 
     /* HOME */
-
     .hero {
       padding: 100px 0 90px;
       display: grid;
@@ -114,22 +91,11 @@
       margin-bottom: 16px;
     }
 
-    h1, h2, h3 {
-      font-family: var(--serif);
-      font-weight: 400;
-      line-height: 1.2;
-    }
+    h1, h2, h3 { font-family: var(--serif); font-weight: 400; line-height: 1.2; }
 
-    h1 {
-      font-size: clamp(3rem, 7vw, 5.2rem);
-      margin-bottom: 20px;
-    }
+    h1 { font-size: clamp(3rem, 7vw, 5.2rem); margin-bottom: 20px; }
 
-    .hero p {
-      max-width: 620px;
-      color: var(--muted);
-      font-size: 1.02rem;
-    }
+    .hero p { max-width: 620px; color: var(--muted); font-size: 1.02rem; }
 
     .hero-note {
       margin-top: 25px;
@@ -142,7 +108,6 @@
     }
 
     /* PERSONAL PHOTO */
-
     .hero-photo {
       width: 100%;
       max-width: 360px;
@@ -162,30 +127,13 @@
       display: block;
     }
 
-    section {
-      padding: 78px 0;
-    }
+    section { padding: 78px 0; }
 
-    .section-heading {
-      margin-bottom: 32px;
-    }
+    .section-heading { margin-bottom: 32px; }
+    .section-heading h2 { font-size: clamp(2.2rem, 5vw, 3rem); margin-bottom: 10px; }
+    .section-heading p { color: var(--muted); max-width: 650px; font-size: 0.93rem; }
 
-    .section-heading h2 {
-      font-size: clamp(2.2rem, 5vw, 3rem);
-      margin-bottom: 10px;
-    }
-
-    .section-heading p {
-      color: var(--muted);
-      max-width: 650px;
-      font-size: 0.93rem;
-    }
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1.3fr 0.7fr;
-      gap: 25px;
-    }
+    .about-grid { display: grid; grid-template-columns: 1.3fr 0.7fr; gap: 25px; }
 
     .card {
       background: var(--surface);
@@ -195,17 +143,9 @@
       box-shadow: var(--shadow);
     }
 
-    .card p {
-      color: var(--muted);
-      font-size: 0.92rem;
-    }
+    .card p { color: var(--muted); font-size: 0.92rem; }
 
-    .interests {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 9px;
-      margin-top: 20px;
-    }
+    .interests { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 20px; }
 
     .interest {
       background: var(--pink-light);
@@ -215,10 +155,7 @@
       font-size: 0.76rem;
     }
 
-    .quick-facts {
-      display: grid;
-      gap: 18px;
-    }
+    .quick-facts { display: grid; gap: 18px; }
 
     .fact strong {
       display: block;
@@ -229,12 +166,9 @@
       margin-bottom: 4px;
     }
 
-    .fact span {
-      font-size: 0.9rem;
-    }
+    .fact span { font-size: 0.9rem; }
 
     /* RESEARCH */
-
     .research-feature {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -255,23 +189,10 @@
       background: var(--pink-light);
     }
 
-    .research-feature h3 {
-      font-size: 1.8rem;
-      margin-bottom: 12px;
-    }
+    .research-feature h3 { font-size: 1.8rem; margin-bottom: 12px; }
+    .research-feature p { color: var(--muted); font-size: 0.9rem; margin-bottom: 14px; }
 
-    .research-feature p {
-      color: var(--muted);
-      font-size: 0.9rem;
-      margin-bottom: 14px;
-    }
-
-    .tag-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 16px;
-    }
+    .tag-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
 
     .tag {
       font-size: 0.72rem;
@@ -290,10 +211,7 @@
       box-shadow: var(--shadow);
     }
 
-    .poster-preview h3 {
-      margin-bottom: 12px;
-      font-size: 1.45rem;
-    }
+    .poster-preview h3 { margin-bottom: 12px; font-size: 1.45rem; }
 
     .poster-preview img {
       width: 100%;
@@ -304,19 +222,10 @@
       cursor: zoom-in;
     }
 
-    .poster-preview p {
-      margin-top: 10px;
-      color: var(--muted);
-      font-size: 0.82rem;
-    }
+    .poster-preview p { margin-top: 10px; color: var(--muted); font-size: 0.82rem; }
 
     /* PROJECT CARDS */
-
-    .project-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 22px;
-    }
+    .project-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
 
     .project-card {
       background: var(--surface);
@@ -341,19 +250,9 @@
       display: block;
     }
 
-    .project-content {
-      padding: 23px;
-    }
-
-    .project-content h3 {
-      font-size: 1.5rem;
-      margin-bottom: 9px;
-    }
-
-    .project-content p {
-      color: var(--muted);
-      font-size: 0.86rem;
-    }
+    .project-content { padding: 23px; }
+    .project-content h3 { font-size: 1.5rem; margin-bottom: 9px; }
+    .project-content p { color: var(--muted); font-size: 0.86rem; }
 
     .view-more {
       display: inline-block;
@@ -364,12 +263,7 @@
     }
 
     /* EDUCATION */
-
-    .education-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 22px;
-    }
+    .education-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
 
     .contact-card {
       background: linear-gradient(120deg, var(--pink-light), #f1edf5, var(--sage));
@@ -378,15 +272,8 @@
       text-align: center;
     }
 
-    .contact-card h2 {
-      font-size: 2.5rem;
-      margin-bottom: 12px;
-    }
-
-    .contact-card p {
-      color: #6f6570;
-      margin-bottom: 20px;
-    }
+    .contact-card h2 { font-size: 2.5rem; margin-bottom: 12px; }
+    .contact-card p { color: #6f6570; margin-bottom: 20px; }
 
     .contact-button {
       display: inline-block;
@@ -398,9 +285,7 @@
       transition: background 0.2s;
     }
 
-    .contact-button:hover {
-      background: #493747;
-    }
+    .contact-button:hover { background: #493747; }
 
     footer {
       text-align: center;
@@ -411,7 +296,6 @@
     }
 
     /* GALLERY MODAL */
-
     .modal {
       display: none;
       position: fixed;
@@ -424,9 +308,7 @@
       justify-content: center;
     }
 
-    .modal.active {
-      display: flex;
-    }
+    .modal.active { display: flex; }
 
     .modal-content {
       position: relative;
@@ -453,20 +335,9 @@
       z-index: 2;
     }
 
-    .modal-info {
-      padding-top: 20px;
-    }
-
-    .modal-info h2 {
-      font-size: 2rem;
-      margin-bottom: 14px;
-    }
-
-    .modal-info p {
-      color: var(--muted);
-      font-size: 0.9rem;
-      margin-bottom: 14px;
-    }
+    .modal-info { padding-top: 20px; }
+    .modal-info h2 { font-size: 2rem; margin-bottom: 14px; }
+    .modal-info p { color: var(--muted); font-size: 0.9rem; margin-bottom: 14px; }
 
     .modal-gallery img {
       width: 100%;
@@ -476,17 +347,9 @@
       border-radius: 7px;
     }
 
-    .image-caption {
-      color: var(--muted);
-      font-size: 0.78rem;
-      margin: 8px 0 14px;
-    }
+    .image-caption { color: var(--muted); font-size: 0.78rem; margin: 8px 0 14px; }
 
-    .thumbnails {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
+    .thumbnails { display: flex; gap: 10px; flex-wrap: wrap; }
 
     .thumbnails button {
       width: 75px;
@@ -499,15 +362,9 @@
       background: #eee;
     }
 
-    .thumbnails button.selected {
-      border-color: #a66e86;
-    }
+    .thumbnails button.selected { border-color: #a66e86; }
 
-    .thumbnails img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+    .thumbnails img { width: 100%; height: 100%; object-fit: cover; }
 
     .poster-modal-content {
       position: relative;
@@ -519,58 +376,18 @@
       border-radius: 10px;
     }
 
-    .poster-modal-content img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
+    .poster-modal-content img { width: 100%; height: auto; display: block; }
 
     @media (max-width: 760px) {
-      .navbar {
-        align-items: flex-start;
-        padding: 16px 0;
-        flex-direction: column;
-      }
-
-      .nav-links {
-        gap: 12px;
-        font-size: 0.75rem;
-      }
-
-      .hero {
-        grid-template-columns: 1fr;
-        padding: 65px 0;
-        gap: 30px;
-      }
-
-      .hero-photo {
-        max-width: 320px;
-        height: 380px;
-      }
-
-      .about-grid,
-      .research-feature,
-      .project-grid,
-      .education-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .research-feature img {
-        height: 220px;
-      }
-
-      .modal-content {
-        grid-template-columns: 1fr;
-        padding: 25px 18px;
-      }
-
-      .modal-gallery img {
-        height: 260px;
-      }
-
-      .contact-card {
-        padding: 30px 20px;
-      }
+      .navbar { align-items: flex-start; padding: 16px 0; flex-direction: column; }
+      .nav-links { gap: 12px; font-size: 0.75rem; }
+      .hero { grid-template-columns: 1fr; padding: 65px 0; gap: 30px; }
+      .hero-photo { max-width: 320px; height: 380px; }
+      .about-grid, .research-feature, .project-grid, .education-grid { grid-template-columns: 1fr; }
+      .research-feature img { height: 220px; }
+      .modal-content { grid-template-columns: 1fr; padding: 25px 18px; }
+      .modal-gallery img { height: 260px; }
+      .contact-card { padding: 30px 20px; }
     }
   </style>
 </head>
@@ -738,15 +555,14 @@
 
       <div class="project-grid">
 
-        <article class="project-card" 
-          onclick="openProject('verdantLeadership')">
-          <img src="images/verdant-leadership-1.jpg"
-            alt="Verdant student magazine">
+        <article class="project-card" onclick="openProject('verdantProject')">
+          <img src="images/verdant-leadership-1.jpg" alt="Verdant student magazine"
+               onerror="this.style.display='none'">
           <div class="project-content">
             <h3>Verdant Student Magazine</h3>
             <p>
               A digital student magazine highlighting journalism,
-              research, sustainability, engineering, and student 
+              research, sustainability, engineering, and student
               perspectives.
             </p>
             <span class="view-more">Explore project →</span>
@@ -854,49 +670,49 @@
   </section>
 
   <!-- EDUCATION -->
-<section id="education">
-  <div class="container">
-    <div class="section-heading">
-      <div class="eyebrow">Academic journey</div>
-      <h2>Academic Achievements & Experiences</h2>
-      <p>
-        My academic background, achievements, and important experiences
-        along the way.
-      </p>
+  <section id="education">
+    <div class="container">
+      <div class="section-heading">
+        <div class="eyebrow">Academic journey</div>
+        <h2>Academic Achievements & Experiences</h2>
+        <p>
+          My academic background, achievements, and important experiences
+          along the way.
+        </p>
+      </div>
+
+      <div class="education-grid">
+
+        <article class="project-card" onclick="openProject('college')">
+          <img src="images/college-1.jpg" alt="Miami Dade College"
+               onerror="this.style.display='none'">
+          <div class="project-content">
+            <h3>Miami Dade College</h3>
+            <p>
+              Pursuing studies in physics while participating in the
+              Honors College and exploring research opportunities.
+            </p>
+            <span class="view-more">View education gallery →</span>
+          </div>
+        </article>
+
+        <article class="project-card" onclick="openProject('academicMilestones')">
+          <img src="images/milestone-1.jpg" alt="Academic achievements"
+               onerror="this.style.display='none'">
+          <div class="project-content">
+            <h3>Academic Achievements & Experiences</h3>
+            <p>
+              Recognizing academic accomplishments, including a first-place
+              NASA Space Apps Challenge award and participation in
+              The Inside Washington Seminar.
+            </p>
+            <span class="view-more">View achievements →</span>
+          </div>
+        </article>
+
+      </div>
     </div>
-
-    <div class="education-grid">
-
-      <article class="project-card" onclick="openProject('college')">
-        <img src="images/college-1.jpg" alt="Miami Dade College"
-             onerror="this.style.display='none'">
-        <div class="project-content">
-          <h3>Miami Dade College</h3>
-          <p>
-            Pursuing studies in physics while participating in the
-            Honors College and exploring research opportunities.
-          </p>
-          <span class="view-more">View education gallery →</span>
-        </div>
-      </article>
-
-      <article class="project-card" onclick="openProject('academicMilestones')">
-        <img src="images/milestone-1.jpg" alt="Academic achievements"
-             onerror="this.style.display='none'">
-        <div class="project-content">
-          <h3>Academic Achievements & Experiences</h3>
-          <p>
-            Recognizing academic accomplishments, including a first-place
-            NASA Space Apps Challenge award and participation in
-            The Inside Washington Seminar.
-          </p>
-          <span class="view-more">View achievements →</span>
-        </div>
-      </article>
-
-    </div>
-  </div>
-</section>
+  </section>
 
   <!-- CONTACT -->
   <section id="contact">
@@ -933,6 +749,7 @@
       <h2 id="modalTitle"></h2>
       <p id="modalDescription"></p>
       <p id="modalExtra"></p>
+      <a id="modalLink" class="contact-button" href="#" target="_blank" rel="noopener" style="display:none; margin-top:10px;"></a>
     </div>
 
     <div class="modal-gallery">
@@ -952,6 +769,8 @@
 </div>
 
 <script>
+  const VERDANT_URL = "https://rinafls180-code.github.io/Verdant/";
+
   const projects = {
 
     quantum: {
@@ -976,11 +795,26 @@
       ]
     },
 
+    verdantProject: {
+      category: "Project",
+      title: "Verdant Student Magazine",
+      description: "Verdant is a digital student magazine that highlights journalism, research, sustainability, engineering, creativity, and student perspectives from across campus.",
+      extra: "The magazine is published online so students can share their work and ideas with a wider audience.",
+      link: VERDANT_URL,
+      linkText: "Visit Verdant →",
+      images: [
+        { src: "images/verdant-leadership-1.jpg", caption: "Verdant's website and digital magazine." },
+        { src: "images/verdant-leadership-2.jpg", caption: "Magazine content and editorial work." }
+      ]
+    },
+
     verdantLeadership: {
       category: "Leadership & Involvement",
       title: "Verdant Student Magazine",
       description: "As website lead, I help develop and maintain Verdant, a student magazine designed to showcase student journalism, research, sustainability, engineering, creativity, and campus perspectives.",
       extra: "My responsibilities include website development, organizing digital content, coordinating contributions, and helping shape the magazine's online presence.",
+      link: VERDANT_URL,
+      linkText: "Visit Verdant →",
       images: [
         { src: "images/verdant-leadership-1.jpg", caption: "Verdant's website and digital magazine." },
         { src: "images/verdant-leadership-2.jpg", caption: "Magazine content and editorial work." }
@@ -1031,14 +865,11 @@
       ]
     },
 
-        academicMilestones: {
+    academicMilestones: {
       category: "Academic Achievements & Experiences",
       title: "Academic Achievements & Experiences",
-
       description: "NASA International Space Apps Challenge | First Place (October 4–5, 2025). As part of Team Cosmos App, I collaborated with my teammates to develop Meteor Madness Simulator, an interactive project exploring meteorite impacts and their potential consequences through customizable simulation variables.",
-
       extra: "The Inside Washington Seminar | January 2026. Through an opportunity shared by the Miami Dade College Honors College, I participated in daily seminars discussing politics, public policy, and government. The experience also included visits to the U.S. Capitol and the Library of Congress.",
-
       images: [
         { src: "images/milestone-1.jpg", caption: "NASA International Space Apps Challenge, First Place." },
         { src: "images/milestone-2.jpg", caption: "The Inside Washington Seminar, January 2026." }
@@ -1048,8 +879,6 @@
   };
 
   function openProject(key) {
-
-  function openProject(key) {
     const project = projects[key];
     if (!project) return;
 
@@ -1057,6 +886,15 @@
     document.getElementById("modalTitle").textContent = project.title;
     document.getElementById("modalDescription").textContent = project.description;
     document.getElementById("modalExtra").textContent = project.extra;
+
+    const link = document.getElementById("modalLink");
+    if (project.link) {
+      link.href = project.link;
+      link.textContent = project.linkText || "Visit website →";
+      link.style.display = "inline-block";
+    } else {
+      link.style.display = "none";
+    }
 
     const mainImage = document.getElementById("mainGalleryImage");
     const caption = document.getElementById("imageCaption");
@@ -1083,6 +921,7 @@
       const thumbnail = document.createElement("img");
       thumbnail.src = image.src;
       thumbnail.alt = image.caption;
+      thumbnail.onerror = function () { button.style.display = "none"; };
 
       button.appendChild(thumbnail);
       button.addEventListener("click", () => selectImage(index));
@@ -1124,7 +963,7 @@
     }
   }
 
-  document.addEventListener("keydown", function(event) {
+  document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
       closeProject();
       closePoster();
