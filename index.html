@@ -738,6 +738,21 @@
 
       <div class="project-grid">
 
+        <article class="project-card" 
+          onclick="openProject('verdantLeadership')">
+          <img src="images/verdant-leadership-1.jpg"
+            alt="Verdant student magazine">
+          <div class="project-content">
+            <h3>Verdant Student Magazine</h3>
+            <p>
+              A digital student magazine highlighting journalism,
+              research, sustainability, engineering, and student 
+              perspectives.
+            </p>
+            <span class="view-more">Explore project →</span>
+          </div>
+        </article>
+
         <article class="project-card" onclick="openProject('quantum')">
           <img src="images/quantum-1.jpg" alt="Quantum science project"
                onerror="this.style.display='none'">
@@ -1016,19 +1031,23 @@
       ]
     },
 
-    academicMilestones: {
-  category: "Academic Achievements & Experiences",
-  title: "Academic Achievements & Experiences",
+        academicMilestones: {
+      category: "Academic Achievements & Experiences",
+      title: "Academic Achievements & Experiences",
 
-  description: "NASA International Space Apps Challenge | First Place (October 4–5, 2025). As part of Team Cosmos App, I collaborated with my teammates to develop Meteor Madness Simulator, an interactive project exploring meteorite impacts and their potential consequences through customizable simulation variables.",
+      description: "NASA International Space Apps Challenge | First Place (October 4–5, 2025). As part of Team Cosmos App, I collaborated with my teammates to develop Meteor Madness Simulator, an interactive project exploring meteorite impacts and their potential consequences through customizable simulation variables.",
 
-  extra: "The Inside Washington Seminar | January 2026. Through an opportunity shared by the Miami Dade College Honors College, I participated in daily seminars discussing politics, public policy, and government. The experience also included visits to the U.S. Capitol and the Library of Congress.",
+      extra: "The Inside Washington Seminar | January 2026. Through an opportunity shared by the Miami Dade College Honors College, I participated in daily seminars discussing politics, public policy, and government. The experience also included visits to the U.S. Capitol and the Library of Congress.",
 
-  images: [
-    { src: "images/milestone-1.jpg", caption: "Academic achievement or experience." },
-    { src: "images/milestone-2.jpg", caption: "Additional academic experience." }
-  ]
-}
+      images: [
+        { src: "images/milestone-1.jpg", caption: "NASA International Space Apps Challenge, First Place." },
+        { src: "images/milestone-2.jpg", caption: "The Inside Washington Seminar, January 2026." }
+      ]
+    }
+
+  };
+
+  function openProject(key) {
 
   function openProject(key) {
     const project = projects[key];
