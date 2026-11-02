@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -578,6 +577,7 @@
               Exploring quantum computing concepts, emerging technologies,
               and their potential applications.
             </p>
+            <span class="view-more">Explore project →</span>
           </div>
         </article>
 
@@ -590,6 +590,7 @@
               Exploring the relationship between physical principles
               and biological systems.
             </p>
+            <span class="view-more">Explore interest →</span>
           </div>
         </article>
 
@@ -694,17 +695,29 @@
           </div>
         </article>
 
-        <article class="project-card" onclick="openProject('academicMilestones')">
-          <img src="images/milestone-1.jpg" alt="Academic achievements"
+        <article class="project-card" onclick="openProject('nasa')">
+          <img src="images/nasa-1.jpg" alt="NASA International Space Apps Challenge"
                onerror="this.style.display='none'">
           <div class="project-content">
-            <h3>Academic Achievements & Experiences</h3>
+            <h3>NASA Space Apps Challenge</h3>
             <p>
-              Recognizing academic accomplishments, including a first-place
-              NASA Space Apps Challenge award and participation in
-              The Inside Washington Seminar.
+              First place at the NASA International Space Apps Challenge
+              with Team Cosmos App, for building the Meteor Madness Simulator.
             </p>
-            <span class="view-more">View achievements →</span>
+            <span class="view-more">View achievement →</span>
+          </div>
+        </article>
+
+        <article class="project-card" onclick="openProject('washington')">
+          <img src="images/washington-1.jpg" alt="The Inside Washington Seminar"
+               onerror="this.style.display='none'">
+          <div class="project-content">
+            <h3>The Inside Washington Seminar</h3>
+            <p>
+              Daily seminars on politics, public policy, and government,
+              including visits to the U.S. Capitol and the Library of Congress.
+            </p>
+            <span class="view-more">View experience →</span>
           </div>
         </article>
 
@@ -863,14 +876,25 @@
       ]
     },
 
-    academicMilestones: {
-      category: "Academic Achievements & Experiences",
-      title: "Academic Achievements & Experiences",
-      description: "NASA International Space Apps Challenge | First Place (October 4–5, 2025). As part of Team Cosmos App, I collaborated with my teammates to develop Meteor Madness Simulator, an interactive project exploring meteorite impacts and their potential consequences through customizable simulation variables.",
-      extra: "The Inside Washington Seminar | January 2026. Through an opportunity shared by the Miami Dade College Honors College, I participated in daily seminars discussing politics, public policy, and government. The experience also included visits to the U.S. Capitol and the Library of Congress.",
+    nasa: {
+      category: "Academic Achievement",
+      title: "NASA International Space Apps Challenge",
+      description: "First Place | October 4–5, 2025. As part of Team Cosmos App, I collaborated with my teammates to develop Meteor Madness Simulator, an interactive project exploring meteorite impacts and their potential consequences through customizable simulation variables.",
+      extra: "",
       images: [
-        { src: "images/milestone-1.jpg", caption: "NASA International Space Apps Challenge, First Place." },
-        { src: "images/milestone-2.jpg", caption: "The Inside Washington Seminar, January 2026." }
+        { src: "images/nasa-1.jpg", caption: "NASA International Space Apps Challenge, First Place." },
+        { src: "images/nasa-2.jpg", caption: "Team Cosmos App and the Meteor Madness Simulator." }
+      ]
+    },
+
+    washington: {
+      category: "Academic Experience",
+      title: "The Inside Washington Seminar",
+      description: "January 2026. Through an opportunity shared by the Miami Dade College Honors College, I participated in daily seminars discussing politics, public policy, and government.",
+      extra: "The experience also included visits to the U.S. Capitol and the Library of Congress.",
+      images: [
+        { src: "images/washington-1.jpg", caption: "The Inside Washington Seminar, January 2026." },
+        { src: "images/washington-2.jpg", caption: "Visits to the U.S. Capitol and the Library of Congress." }
       ]
     }
 
