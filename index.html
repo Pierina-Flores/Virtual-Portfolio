@@ -845,48 +845,49 @@
   </section>
 
   <!-- EDUCATION -->
-  <section id="education">
-    <div class="container">
-      <div class="section-heading">
-        <div class="eyebrow">Academic journey</div>
-        <h2>Education & Milestones</h2>
-        <p>
-          My academic background, achievements, and important moments
-          along the way.
-        </p>
-      </div>
-
-      <div class="education-grid">
-
-        <article class="project-card" onclick="openProject('college')">
-          <img src="images/college-1.jpg" alt="Miami Dade College"
-               onerror="this.style.display='none'">
-          <div class="project-content">
-            <h3>Miami Dade College</h3>
-            <p>
-              Pursuing studies in physics while participating in the
-              Honors College and exploring research opportunities.
-            </p>
-            <span class="view-more">View education gallery →</span>
-          </div>
-        </article>
-
-        <article class="project-card" onclick="openProject('academicMilestones')">
-          <img src="images/milestone-1.jpg" alt="Academic milestone"
-               onerror="this.style.display='none'">
-          <div class="project-content">
-            <h3>Academic Milestones</h3>
-            <p>
-              Celebrating academic experiences, presentations,
-              achievements, and opportunities for growth.
-            </p>
-            <span class="view-more">View milestones →</span>
-          </div>
-        </article>
-
-      </div>
+<section id="education">
+  <div class="container">
+    <div class="section-heading">
+      <div class="eyebrow">Academic journey</div>
+      <h2>Academic Achievements & Experiences</h2>
+      <p>
+        My academic background, achievements, and important experiences
+        along the way.
+      </p>
     </div>
-  </section>
+
+    <div class="education-grid">
+
+      <article class="project-card" onclick="openProject('college')">
+        <img src="images/college-1.jpg" alt="Miami Dade College"
+             onerror="this.style.display='none'">
+        <div class="project-content">
+          <h3>Miami Dade College</h3>
+          <p>
+            Pursuing studies in physics while participating in the
+            Honors College and exploring research opportunities.
+          </p>
+          <span class="view-more">View education gallery →</span>
+        </div>
+      </article>
+
+      <article class="project-card" onclick="openProject('academicMilestones')">
+        <img src="images/milestone-1.jpg" alt="Academic achievements"
+             onerror="this.style.display='none'">
+        <div class="project-content">
+          <h3>Academic Achievements & Experiences</h3>
+          <p>
+            Recognizing academic accomplishments, including a first-place
+            NASA Space Apps Challenge award and participation in
+            The Inside Washington Seminar.
+          </p>
+          <span class="view-more">View achievements →</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
 
   <!-- CONTACT -->
   <section id="contact">
@@ -1029,16 +1030,18 @@
     },
 
     academicMilestones: {
-      category: "Education",
-      title: "Academic Milestones",
-      description: "This collection highlights meaningful moments throughout my academic journey, including academic events, presentations, recognitions, and opportunities for personal and professional growth.",
-      extra: "I will continue adding milestones as I progress through my education.",
-      images: [
-        { src: "images/milestone-1.jpg", caption: "An important academic milestone." },
-        { src: "images/milestone-2.jpg", caption: "Another memorable academic experience." }
-      ]
-    }
-  };
+  category: "Academic Achievements & Experiences",
+  title: "Academic Achievements & Experiences",
+
+  description: "NASA International Space Apps Challenge | First Place (October 4–5, 2025). As part of Team Cosmos App, I collaborated with my teammates to develop Meteor Madness Simulator, an interactive project exploring meteorite impacts and their potential consequences through customizable simulation variables.",
+
+  extra: "The Inside Washington Seminar | January 2026. Through an opportunity shared by the Miami Dade College Honors College, I participated in daily seminars discussing politics, public policy, and government. The experience also included visits to the U.S. Capitol and the Library of Congress.",
+
+  images: [
+    { src: "images/milestone-1.jpg", caption: "Academic achievement or experience." },
+    { src: "images/milestone-2.jpg", caption: "Additional academic experience." }
+  ]
+}
 
   function openProject(key) {
     const project = projects[key];
