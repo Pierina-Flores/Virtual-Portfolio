@@ -95,6 +95,8 @@
       color: #a66e86;
     }
 
+    /* HOME */
+
     .hero {
       padding: 100px 0 90px;
       display: grid;
@@ -139,22 +141,25 @@
       font-size: 0.83rem;
     }
 
-    .hero-visual {
-      min-height: 340px;
-      border-radius: 180px 180px 12px 12px;
-      background: linear-gradient(145deg, var(--pink-light), var(--lavender), var(--sage));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 30px;
-      color: #665765;
+    /* PERSONAL PHOTO */
+
+    .hero-photo {
+      width: 100%;
+      max-width: 360px;
+      height: 420px;
+      margin: auto;
+      overflow: hidden;
+      border-radius: 12px;
+      background: var(--pink-light);
+      box-shadow: var(--shadow);
     }
 
-    .hero-visual span {
-      font-family: var(--serif);
-      font-size: 2rem;
-      line-height: 1.35;
+    .hero-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
     }
 
     section {
@@ -227,6 +232,8 @@
     .fact span {
       font-size: 0.9rem;
     }
+
+    /* RESEARCH */
 
     .research-feature {
       display: grid;
@@ -303,6 +310,8 @@
       font-size: 0.82rem;
     }
 
+    /* PROJECT CARDS */
+
     .project-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -354,30 +363,12 @@
       color: #a66e86;
     }
 
+    /* EDUCATION */
+
     .education-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 22px;
-    }
-
-    .milestone-card {
-      border-left: 3px solid var(--pink);
-      padding: 8px 0 8px 20px;
-      margin-bottom: 22px;
-    }
-
-    .milestone-card:last-child {
-      margin-bottom: 0;
-    }
-
-    .milestone-card h3 {
-      font-size: 1.25rem;
-      margin-bottom: 5px;
-    }
-
-    .milestone-card p {
-      color: var(--muted);
-      font-size: 0.85rem;
     }
 
     .contact-card {
@@ -419,7 +410,7 @@
       border-top: 1px solid var(--border);
     }
 
-    /* Gallery modal */
+    /* GALLERY MODAL */
 
     .modal {
       display: none;
@@ -552,8 +543,9 @@
         gap: 30px;
       }
 
-      .hero-visual {
-        min-height: 220px;
+      .hero-photo {
+        max-width: 320px;
+        height: 380px;
       }
 
       .about-grid,
@@ -617,8 +609,9 @@
       <div class="hero-note">Exploring science, one question at a time.</div>
     </div>
 
-    <div class="hero-visual">
-      <span>Science begins<br>with curiosity.</span>
+    <!-- YOUR PERSONAL PHOTO -->
+    <div class="hero-photo">
+      <img src="images/profile.jpg" alt="Portrait of Pierina Flores">
     </div>
   </div>
 
@@ -754,6 +747,7 @@
               Exploring quantum computing concepts, emerging technologies,
               and their potential applications.
             </p>
+            <span class="view-more">Explore project →</span>
           </div>
         </article>
 
@@ -766,6 +760,7 @@
               Exploring the relationship between physical principles
               and biological systems.
             </p>
+            <span class="view-more">Explore interest →</span>
           </div>
         </article>
 
@@ -791,11 +786,10 @@
           <img src="images/verdant-leadership-1.jpg" alt="Verdant student magazine"
                onerror="this.style.display='none'">
           <div class="project-content">
-            <h3>Verdant: Student Magazine</h3>
+            <h3>Verdant Student Magazine</h3>
             <p>
               Website lead for a student magazine highlighting journalism,
-              research, creativity, and student perspectives; with fun and
-              easy STEM related questions.
+              research, creativity, and student perspectives.
             </p>
             <span class="view-more">View involvement →</span>
           </div>
@@ -943,13 +937,6 @@
 </div>
 
 <script>
-  /*
-    PROJECT CONTENT AND GALLERIES
-
-    Add your images to the images folder.
-    Each image path must match its actual filename.
-  */
-
   const projects = {
 
     quantum: {
